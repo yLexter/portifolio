@@ -9,9 +9,18 @@ const config: Config = {
    theme: {
       extend: {
          colors: {
-            primary: "black",
+            "bg-primary": "black",
+            "primary-secondary": "#333333",
             secondary: "green",
-            "color-text-main": "#f0f0f0",
+            "color-text-main": "#F2F2F2",
+         },
+
+         width: {
+            "custom-full": "calc(100% - 160px)",
+         },
+
+         padding: {
+            "spacing-page": "8%",
          },
       },
    },

@@ -7,11 +7,11 @@ type IPropNav = {
 
 export default function NavBar({ className }: IPropNav) {
    const classNameLi =
-      "text-color-text-main font-light text-sm hover:text-secondary";
+      "text-color-text-main font-light text-xl hover:text-secondary curson-pointer";
 
    return (
       <nav className={twMerge("", className)}>
-         <ul className="flex justify-evenly">
+         <ul className="flex justify-between">
             <li className={classNameLi}>Início</li>
             <li className={classNameLi}>Sobre Mim</li>
             <li className={classNameLi}>Skills</li>

@@ -9,28 +9,32 @@ export default function Presetation({ className }: IPropPresetation) {
    return (
       <div
          className={twMerge(
-            "bg-primary flex min-h-[400px] justify-center flex-col gap-y-3 h-[50vh] p-4",
+            "flex min-h-[400px] justify-center flex-col gap-y-3",
             className
          )}
       >
-         <h1 className="text-color-text-main text-3xl capitalize font-medium after:content-['.'] after:text-secondary after:text-[4rem] ">
-            Olá
-         </h1>
+         <div className="mb-4">
+            <h1 className="text-color-text-main text-2xl font-bold">
+               Olá, Eu sou o
+               <span className="ml-1 bg-clip-text text-transparent bg-gradient-to-r from-[#28af3a] to-[#019a23]">
+                  Lucas Maia
+               </span>
+            </h1>
 
-         <h3 className="text-color-text-main pl-4 relative flex text-base">
-            <span className="ml-2 before:absolute before:bottom-[40%] before:left-[-1%] before:content-[''] before:w-6 before:h-[1px] before:bg-secondary">
-               Eu sou o Lucas Maia
-            </span>
-         </h3>
+            <p className="text-base font-semibold text-color-text-main">
+               Eu sou um{" "}
+               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#28af3a] to-[#013a23] ">
+                  Desenvolvedor Web
+               </span>{" "}
+            </p>
+         </div>
 
-         <p className="text-base font-semibold text-color-text-main">
-            Eu sou um{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#28af3a] to-[#013a23] ">
-               Desenvolvedor Web
-            </span>{" "}
+         <p className="text-[rgb(255,255,255,0.5)] mb-4">
+            Venho me dedicando todos os dias em programação. Desde o início, não
+            houve um único dia em que não tenha continuado a aprender, com o
+            objetivo de me tornar um desenvolvedor Full Stack excepcional. Meu
+            foco é resolver problemas do mercado
          </p>
-
-         <p className="text-[rgb(255,255,255,0.5)]">Descrição</p>
 
          <button className="cursor-pointer text-center h-14 w-56 bg-gradient-to-r from-[#28af3a] to-[#013a23] text-color-text-main">
             Meu CV
