@@ -13,6 +13,7 @@ const config: Config = {
             "primary-secondary": "#333333",
             secondary: "green",
             "color-text-main": "#F2F2F2",
+            "color-text-secondary": "#e5e7eb",
          },
 
          width: {
