@@ -35,11 +35,11 @@ const ProjectImage = ({
    project: { name, url, image, description, languages },
 }: IProject) => {
    return (
-      <div className="flex flex-1 items-center justify-center">
+      <div className="flex flex-1 items-start justify-center">
          <figure className="border-slate-700 border-solid border-2 hover:scale-105">
             <a href={url} target="_blank">
                <img
-                  className="w-full h-2/3"
+                  className="w-full h-48"
                   src={image}
                   alt={`Projeto: ${name}`}
                />
@@ -51,7 +51,7 @@ const ProjectImage = ({
 
 export default function Project({ project, index }: IPropProject) {
    return (
-      <article className="flex mb-8 gap-x-4">
+      <article className="flex mb-16 gap-x-16">
          {index % 2 == 0 && (
             <>
                <ProjectInformation project={project} />
