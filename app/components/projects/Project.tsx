@@ -2,39 +2,68 @@ import { TProject } from "@/app/entities";
 import React from "react";
 import IconLanguage from "../UI/IconLanguage.tsx/IconLanguage";
 
-type IPropProject = {
+type IProject = {
    project: TProject;
 };
 
-export default function Project({
+type IPropProject = {
+   index: number;
+} & IProject;
+
+const ProjectInformation = ({
    project: { name, url, image, description, languages },
-}: IPropProject) {
+}: IProject) => {
    return (
-      <article className="flex">
-         <div className="flex-1">
-            <div className="mb-6">
-               <h1 className="text-2xl font-semibold text-color-text-main mb-4">
-                  {name}
-               </h1>
-               <p className="text-color-text-secondary text-xl ">
-                  {description}
-               </p>
-            </div>
-
-            <div className="flex gap-x-4">
-               {languages.map((iconLanguge) => {
-                  return <IconLanguage icon={iconLanguge} />;
-               })}
-            </div>
+      <div className="flex-1">
+         <div className="mb-6">
+            <h1 className="text-2xl font-semibold text-color-text-main mb-4">
+               {name}
+            </h1>
+            <p className="text-color-text-secondary text-xl ">{description}</p>
          </div>
 
-         <div className="flex-1">
-            <figure>
-               <a href={url} target="_blank">
-                  <img src={image} alt={`Projeto: ${name}`} />
-               </a>
-            </figure>
+         <div className="flex gap-x-4">
+            {languages.map((iconLanguge) => {
+               return <IconLanguage icon={iconLanguge} />;
+            })}
          </div>
+      </div>
+   );
+};
+
+const ProjectImage = ({
+   project: { name, url, image, description, languages },
+}: IProject) => {
+   return (
+      <div className="flex flex-1 items-center justify-center">
+         <figure className="border-slate-700 border-solid border-2 hover:scale-105">
+            <a href={url} target="_blank">
+               <img
+                  className="w-full h-2/3"
+                  src={image}
+                  alt={`Projeto: ${name}`}
+               />
+            </a>
+         </figure>
+      </div>
+   );
+};
+
+export default function Project({ project, index }: IPropProject) {
+   return (
+      <article className="flex mb-8 gap-x-4">
+         {index % 2 == 0 && (
+            <>
+               <ProjectInformation project={project} />
+               <ProjectImage project={project} />
+            </>
+         )}
+         {index % 2 != 0 && (
+            <>
+               <ProjectImage project={project} />
+               <ProjectInformation project={project} />
+            </>
+         )}
       </article>
    );
 }

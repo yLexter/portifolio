@@ -1,5 +1,6 @@
-import { TLanguagesAndFrameworks } from "@/app/entities";
+import { TLanguageColors, TLanguagesAndFrameworks } from "@/app/entities";
 import React from "react";
+
 import { TbBrandCpp } from "react-icons/tb";
 
 import {
@@ -13,7 +14,8 @@ import {
    FaNodeJs,
 } from "react-icons/fa";
 
-import { DiJavascript1 } from "react-icons/di";
+import { SiNextdotjs, SiTypescript } from "react-icons/si";
+import { DiJavascript1, DiMongodb } from "react-icons/di";
 import { IconType } from "react-icons";
 
 type IPropIconLanguage = {
@@ -23,7 +25,7 @@ type IPropIconLanguage = {
 export default function IconLanguage({ icon }: IPropIconLanguage) {
    const languageIcons: Record<TLanguagesAndFrameworks, IconType> = {
       JavaScript: FaJsSquare,
-      TypeScript: DiJavascript1,
+      TypeScript: SiTypescript,
       HTML: FaHtml5,
       CSS: FaCss3,
       React: FaReact,
@@ -32,6 +34,8 @@ export default function IconLanguage({ icon }: IPropIconLanguage) {
       Java: FaJava,
       ExpressJs: FaNode,
       C: TbBrandCpp,
+      MongoDB: DiMongodb,
+      NextJs: SiNextdotjs,
    };
 
    const IconSelected = languageIcons[icon];
@@ -40,7 +44,7 @@ export default function IconLanguage({ icon }: IPropIconLanguage) {
 
    return (
       <div className="flex items-center flex-col gap-y-4">
-         <IconSelected size={30} color="white" />
+         <IconSelected size={30} color={TLanguageColors[icon]} />
          <span className="text-base text-color-text-secondary">{icon}</span>
       </div>
    );

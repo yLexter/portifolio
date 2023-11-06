@@ -1,19 +1,20 @@
+"use client";
+
 import { TProject } from "@/app/entities";
 import React from "react";
 import Project from "./Project";
+import useFetch from "../hooks/useFetch";
 
 type IPropProjects = {};
 
 export default function Projects({}: IPropProjects) {
-   const projects: TProject[] = [
-      {
-         name: "Projetos/Exercícios do Curso de Computação",
-         url: "https://github.com/yLexter/Exercicios",
-         image: "https://c8.alamy.com/comp/CY2BHT/web-development-concept-in-word-tag-cloud-on-black-background-CY2BHT.jpg",
-         description: "Todos os meus exercícios e projetos da faculdade",
-         languages: ["Python", "Java", "C"],
-      },
-   ];
+   const { data, loading, error } = useFetch<{ projects: TProject[] }>(
+      "./jsons/portfolio.json"
+   );
+
+   if (loading) return <p>Loading</p>;
+   if (!data) return <p>No data found!</p>;
+   if (error) return <p>{error.message}</p>;
 
    return (
       <section className="pl-spacing-page pr-spacing-page pt-spacing-page bg-bg-primary">
@@ -22,8 +23,12 @@ export default function Projects({}: IPropProjects) {
          </h1>
 
          <div>
-            {projects.map((project) => (
-               <Project key={`Project-${project.name}`} project={project} />
+            {data.projects.map((project, index) => (
+               <Project
+                  index={index}
+                  key={`Project-${project.name}`}
+                  project={project}
+               />
             ))}
          </div>
       </section>
