@@ -1,5 +1,6 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import { Button } from "../UI/Button/Button";
 
 type IPropPresetation = {
    className?: string;
@@ -36,9 +37,15 @@ export default function Presetation({ className }: IPropPresetation) {
             foco é resolver problemas do mercado
          </p>
 
-         <button className="cursor-pointer text-center h-14 w-56 bg-gradient-to-r from-[#28af3a] to-[#013a23] text-color-text-main">
-            Meu CV
-         </button>
+         <div className="flex gap-x-4">
+            <Button.Provider className="cursor-pointer text-center h-14 w-56 bg-gradient-to-r from-[#28af3a] to-[#013a23] text-color-text-main">
+               Sobre Mim
+            </Button.Provider>
+
+            <Button.Provider className="cursor-pointer text-center h-14 w-56 bg-gradient-to-r from-[#28af3a] to-[#013a23] text-color-text-main">
+               Meu CV
+            </Button.Provider>
+         </div>
       </div>
    );
 }

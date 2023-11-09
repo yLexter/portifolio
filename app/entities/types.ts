@@ -29,7 +29,8 @@ export const TLanguageColors: Record<TLanguagesAndFrameworks, string> = {
 
 export type TProject = {
    name: string;
-   url: string;
+   github?: string;
+   liveDemo?: string;
    image: string;
    description: string;
    languages: TLanguagesAndFrameworks[];

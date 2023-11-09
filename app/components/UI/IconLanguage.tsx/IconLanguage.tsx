@@ -43,8 +43,8 @@ export default function IconLanguage({ icon }: IPropIconLanguage) {
    if (!IconSelected) throw new Error("Icon Provided is invalid");
 
    return (
-      <div className="flex items-center flex-col gap-y-4">
-         <IconSelected size={30} color={TLanguageColors[icon]} />
+      <div className="flex items-center flex-col gap-y-1">
+         <IconSelected size={28} color={TLanguageColors[icon]} />
          <span className="text-base text-color-text-secondary">{icon}</span>
       </div>
    );

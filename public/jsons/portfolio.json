@@ -1,10 +1,10 @@
 {
     "projects": [
         {
-            "name": "Projetos/Exercícios do Curso de Computação",
-            "url": "https://github.com/yLexter/Exercicios",
-            "image": "https://c8.alamy.com/comp/CY2BHT/web-development-concept-in-word-tag-cloud-on-black-background-CY2BHT.jpg",
-            "description": "Todos os meus exercícios e projetos da faculdade",
+            "name": "Projetos/Exercícios",
+            "github": "https://github.com/yLexter/Exercicios",
+            "image": "https://istack.iium.edu.my/uploads/images/gallery/2021-04/scaled-1680-/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg",
+            "description": "Todos os meus exercícios e projetos feitos ao longo do curso de ciências da computação da UEPB",
             "languages": [
                 "Python",
                 "Java",
@@ -13,9 +13,9 @@
         },
         {
             "name": "Bot Para Discord",
-            "url": "https://github.com/yLexter/botyLexter",
-            "image": "https://droplr.com/wp-content/uploads/2020/09/discord-bots-1200x400.png",
-            "description": "Este bot multifuncional permite a reprodução de músicas nos canais de voz do Discord, oferece recursos de administração para manter a ordem nos servidores, e inclui minigames para diversão adicional. Além disso, o bot integra-se com o MongoDB para armazenar configurações do servidor, informações de administração e estatísticas, tornando-o altamente personalizável. Configuração e personalização são simples, e o projeto é de código aberto, permitindo contribuições para melhorias contínuas.",
+            "github": "https://github.com/yLexter/botyLexter",
+            "image": "https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/KQtkEi6WmzvGz7ACPAghma/download/",
+            "description": "Este bot multifuncional permite a reprodução de músicas nos canais de voz do Discord, oferece recursos de administração para manter a ordem nos servidores, e inclui minigames para diversão adicional.",
             "languages": [
                 "NodeJs",
                 "MongoDB"
@@ -23,9 +23,9 @@
         },
         {
             "name": "ToDo List (Construção)",
-            "url": "https://github.com/yLexter/ToDoList",
-            "image": "https://c4.wallpaperflare.com/wallpaper/461/208/984/quote-wallpaper-preview.jpg",
-            "description": "Este projeto é um aplicativo da web de gerenciamento de lista de tarefas, projetado para ajudar os usuários a acompanhar suas tarefas diárias de maneira eficiente e organizada. A aplicação permite que os usuários criem, editem, excluam e marquem tarefas como concluídas, proporcionando uma experiência de gerenciamento de tarefas intuitiva e eficaz.",
+            "github": "https://github.com/yLexter/ToDoList",
+            "image": "https://t3.ftcdn.net/jpg/01/10/01/90/240_F_110019055_JBbr778hMxpwuwDaFszyQNck5PhBYHli.jpg",
+            "description": "Este projeto é um aplicativo da web de gerenciamento de lista de tarefas, projetado para ajudar os usuários a acompanhar suas tarefas diárias de maneira eficiente e organizada. A aplicação permite que os usuários criem, editem, excluam e marquem tarefas como concluídas",
             "languages": [
                 "TypeScript",
                 "MongoDB",
@@ -34,9 +34,9 @@
         },
         {
             "name": "WikiDarius (Construção)",
-            "url": "https://wikidarius.vercel.app/",
+            "liveDemo": "https://wikidarius.vercel.app/",
             "image": "https://i.pinimg.com/originals/6f/93/50/6f93508f78319faf2a9929632b3fc041.jpg",
-            "description": "WikiDarius é uma plataforma online dedicada a criar uma comunidade de jogadores apaixonados de League of Legends (LoL), com um foco especial no campeão Darius. Este site foi criado para reunir jogadores de Darius de todo o mundo e proporcionar um espaço onde eles possam aprender, compartilhar experiências e aprofundar seus conhecimentos sobre este temível campeão. Aqui, você encontrará uma riqueza de informações sobre Darius, desde guias e estratégias até discussões, vídeos e muito mais.",
+            "description": "WikiDarius é uma plataforma online dedicada a criar uma comunidade de jogadores apaixonados de League of Legends (LoL), com um foco especial no campeão Darius.",
             "languages": [
                 "TypeScript",
                 "MongoDB",

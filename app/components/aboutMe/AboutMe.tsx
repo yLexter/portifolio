@@ -11,7 +11,7 @@ export default function AboutMe({}: IPropAboutMe) {
             </h1>
          </header>
 
-         <main className="flex mb-16 gap-x-16">
+         <main className="flex gap-x-16">
             <div className="flex-1">
                <p className="text-lg text-color-text-secondary">
                   Olá! Sou [Seu Nome], e sou um [Sua Profissão] apaixonado por

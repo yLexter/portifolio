@@ -21,7 +21,7 @@ const config: Config = {
          },
 
          padding: {
-            "spacing-page": "8%",
+            "spacing-page": "12%",
          },
       },
    },
