@@ -4,7 +4,7 @@ type IPropAboutMe = {};
 
 export default function AboutMe({}: IPropAboutMe) {
    return (
-      <section className="bg-bg-primary pl-spacing-page pr-spacing-page">
+      <section className="bg-primary pl-spacing-page pr-spacing-page">
          <header>
             <h1 className="font-semibold text-[4rem] text-color-text-main">
                Sobre mim

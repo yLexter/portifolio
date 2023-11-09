@@ -1,4 +1,9 @@
 {
+    "socials": {
+        "github": "https://github.com/yLexter/Exercicios",
+        "linkedin": "",
+        "twitter": "https://twitter.com/yLexter1"
+    },
     "projects": [
         {
             "name": "Projetos/Exercícios",

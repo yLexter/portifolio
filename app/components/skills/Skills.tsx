@@ -4,14 +4,10 @@ type IPropSkill = {};
 
 export default function Skills({}: IPropSkill) {
    return (
-   
-   <div className="bg-primary-secondary w-custom-full h-40">
+      <div className="primary-secondary w-custom-full h-40">
+         <h1>Skills</h1>
 
-      <h1>Skills</h1>
-
-      <div>
-         
-      </div>   
-
-   </div>);
+         <div></div>
+      </div>
+   );
 }

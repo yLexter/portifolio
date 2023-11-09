@@ -8,7 +8,7 @@ export default function Main({}: IPropMain) {
    return (
       <section
          style={{ backgroundImage: 'url("./images/main-image.jpg" ' }}
-         className="bg-cover pr-spacing-page pl-spacing-page flex w-full relative h-screen"
+         className="bg-cover pr-spacing-page pl-spacing-page flex w-full relative pt-header-height h-screen"
       >
          <Presetation className="w-[40%]" />
       </section>

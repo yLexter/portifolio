@@ -1,6 +1,6 @@
 import { TProject } from "@/app/entities";
 import React from "react";
-import IconLanguage from "../UI/IconLanguage.tsx/IconLanguage";
+import CustomIcon from "../UI/Icon/CustomIcon";
 import { Button } from "../UI/Button/Button";
 
 import { AiFillGithub } from "react-icons/ai";
@@ -30,7 +30,7 @@ const ProjectInformation = ({
 
          <div className="flex gap-x-4 justify-center mb-4">
             {languages.map((iconLanguge) => {
-               return <IconLanguage icon={iconLanguge} />;
+               return <CustomIcon icon={iconLanguge} />;
             })}
          </div>
 

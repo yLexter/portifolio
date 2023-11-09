@@ -1,4 +1,4 @@
-export type TLanguagesAndFrameworks =
+export type TRandomIcon =
    | "JavaScript"
    | "TypeScript"
    | "HTML"
@@ -10,9 +10,12 @@ export type TLanguagesAndFrameworks =
    | "ExpressJs"
    | "C"
    | "MongoDB"
+   | "Github"
+   | "Linkedin"
+   | "Twitter"
    | "NextJs";
 
-export const TLanguageColors: Record<TLanguagesAndFrameworks, string> = {
+export const TRandomIconColors: Record<TRandomIcon, string> = {
    JavaScript: "#F7DF1E",
    TypeScript: "#3178C6",
    HTML: "#E44D26",
@@ -25,6 +28,9 @@ export const TLanguageColors: Record<TLanguagesAndFrameworks, string> = {
    C: "#A8B9CC",
    MongoDB: "#4DB33D",
    NextJs: "#FFFFFF",
+   Github: "#FFFFFF",
+   Linkedin: "#FFFFFF",
+   Twitter: "#FFFFFF",
 } as const;
 
 export type TProject = {
@@ -33,5 +39,5 @@ export type TProject = {
    liveDemo?: string;
    image: string;
    description: string;
-   languages: TLanguagesAndFrameworks[];
+   languages: TRandomIcon[];
 };

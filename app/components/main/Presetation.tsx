@@ -1,6 +1,7 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { Button } from "../UI/Button/Button";
+import { SocialIcons } from "../UI/socials/SocialIcon";
 
 type IPropPresetation = {
    className?: string;
@@ -36,6 +37,12 @@ export default function Presetation({ className }: IPropPresetation) {
             objetivo de me tornar um desenvolvedor Full Stack excepcional. Meu
             foco é resolver problemas do mercado
          </p>
+
+         <div className="flex gap-x-4">
+            {SocialIcons.Github}
+            {SocialIcons.Linkedin}
+            {SocialIcons.Twitter}
+         </div>
 
          <div className="flex gap-x-4">
             <Button.Provider className="cursor-pointer text-center h-14 w-56 bg-gradient-to-r from-[#28af3a] to-[#013a23] text-color-text-main">

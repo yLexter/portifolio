@@ -9,11 +9,15 @@ const config: Config = {
    theme: {
       extend: {
          colors: {
-            "bg-primary": "black",
-            "primary-secondary": "#333333",
+            primary: "black",
             secondary: "green",
+            "primary-secondary": "#333333",
             "color-text-main": "#F2F2F2",
             "color-text-secondary": "#e5e7eb",
+         },
+
+         height: {
+            "header-height": "96px",
          },
 
          width: {
@@ -21,7 +25,8 @@ const config: Config = {
          },
 
          padding: {
-            "spacing-page": "12%",
+            "spacing-page": "15%",
+            "header-height": "96px",
          },
       },
    },
