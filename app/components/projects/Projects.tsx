@@ -17,7 +17,7 @@ export default function Projects({}: IPropProjects) {
    if (error) return <p>{error.message}</p>;
 
    return (
-      <section className="pl-spacing-page pr-spacing-page bg-primary">
+      <section className="px-spacing-page bg-primary">
          <h1 className="text-[4rem] font-semibold text-color-text-main mb-5">
             Projetos
          </h1>

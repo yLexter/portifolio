@@ -11,21 +11,21 @@ export default function Presetation({ className }: IPropPresetation) {
    return (
       <div
          className={twMerge(
-            "flex min-h-[400px] justify-center flex-col gap-y-3",
+            "w-7/12 flex min-h-[400px] justify-center flex-col gap-y-3",
             className
          )}
       >
          <div className="mb-4">
-            <h1 className="text-color-text-main text-2xl font-bold">
+            <h1 className="text-color-text-main text-[2rem] font-bold">
                Olá, Eu sou o
                <span className="ml-1 bg-clip-text text-transparent bg-gradient-to-r from-[#28af3a] to-[#019a23]">
                   Lucas Maia
                </span>
             </h1>
 
-            <p className="text-base font-semibold text-color-text-main">
+            <p className="text-[1.5rem] font-semibold text-color-text-main">
                Eu sou um{" "}
-               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#28af3a] to-[#013a23] ">
+               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#6320cf] to-[#be0ab5] ">
                   Desenvolvedor Web
                </span>{" "}
             </p>
@@ -38,18 +38,18 @@ export default function Presetation({ className }: IPropPresetation) {
             foco é resolver problemas do mercado
          </p>
 
-         <div className="flex gap-x-4">
-            {SocialIcons.Github}
-            {SocialIcons.Linkedin}
-            {SocialIcons.Twitter}
+         <div className="flex gap-x-4 mb-4">
+            <SocialIcons.Github />
+            <SocialIcons.Linkedin />
+            <SocialIcons.Twitter />
          </div>
 
          <div className="flex gap-x-4">
-            <Button.Provider className="cursor-pointer text-center h-14 w-56 bg-gradient-to-r from-[#28af3a] to-[#013a23] text-color-text-main">
+            <Button.Provider className=" bg-secondary h-12 w-40 hover:opacity-90 text-color-text-main font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out">
                Sobre Mim
             </Button.Provider>
 
-            <Button.Provider className="cursor-pointer text-center h-14 w-56 bg-gradient-to-r from-[#28af3a] to-[#013a23] text-color-text-main">
+            <Button.Provider className=" bg-secondary h-12 w-40 hover:opacity-90 text-color-text-main font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out">
                Meu CV
             </Button.Provider>
          </div>

@@ -1,8 +1,12 @@
 import React from "react";
+import Timeline from "../UI/Timeline/Timeline";
+import { TDataTimeline } from "@/app/entities";
 
 type IPropAboutMe = {};
 
 export default function AboutMe({}: IPropAboutMe) {
+ 
+
    return (
       <section className="bg-primary pl-spacing-page pr-spacing-page">
          <header>
@@ -27,12 +31,7 @@ export default function AboutMe({}: IPropAboutMe) {
             </div>
 
             <div className="flex-1">
-               <figure>
-                  <img
-                     src="https://scalar.usc.edu/works/about-myself/media/about_me.jpg"
-                     alt="About Me Imagem"
-                  />
-               </figure>
+               
             </div>
          </main>
       </section>

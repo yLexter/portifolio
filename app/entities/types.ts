@@ -41,3 +41,9 @@ export type TProject = {
    description: string;
    languages: TRandomIcon[];
 };
+
+export type TDataTimeline = {
+   title: string;
+   date: string;
+   text: string;
+};
