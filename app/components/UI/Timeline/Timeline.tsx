@@ -11,7 +11,7 @@ export default function Timeline({ data }: IPropTimeline) {
    return (
       <div
          className={twJoin(
-            "relative",
+            "relative h-auto",
             "after:content-[''] after:absolute after:w-1 after:h-full after:bg-[#24292d] after:top-0",
             "after:ml-[-3px] after:left-1/2"
          )}

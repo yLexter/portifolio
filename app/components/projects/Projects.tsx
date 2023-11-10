@@ -4,6 +4,7 @@ import { TProject } from "@/app/entities";
 import React from "react";
 import Project from "./Project";
 import useFetch from "../hooks/useFetch";
+import SectionTitle from "../UI/Texts/SectionTitle";
 
 type IPropProjects = {};
 
@@ -17,10 +18,8 @@ export default function Projects({}: IPropProjects) {
    if (error) return <p>{error.message}</p>;
 
    return (
-      <section className="px-spacing-page bg-primary">
-         <h1 className="text-[4rem] font-semibold text-color-text-main mb-5">
-            Projetos
-         </h1>
+      <section className="px-spacing-page mb-spacing-section">
+         <SectionTitle title="Projetos" />
 
          <div>
             {data.projects.map((project, index) => (

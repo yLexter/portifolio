@@ -1,6 +1,7 @@
 import React from "react";
 import Timeline from "../UI/Timeline/Timeline";
 import { TDataTimeline } from "../../entities";
+import SectionTitle from "../UI/Texts/SectionTitle";
 
 type IProp = {};
 
@@ -24,11 +25,8 @@ export default function ({}: IProp) {
    ];
 
    return (
-      <div className="px-spacing-page bg-primary">
-         <h1 className="font-semibold text-3xl text-color-text-main">
-            Timeline
-         </h1>
-
+      <div className="mb-spacing-section px-spacing-page h-auto">
+         <SectionTitle title="Timeline" />
          <Timeline data={timelineData} />
       </div>
    );

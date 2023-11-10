@@ -19,8 +19,12 @@ export default function BoxTimeline({
             isEven ? "ml-auto" : "mr-auto",
             "p-4 rounded bg-[#24292d] w-[45%] relative",
             "after:content-[''] after:w-4 after:h-4 after:rounded-full",
-            "after:bg-[#eaa023] after:absolute after:top-[-5px]  after:z-10",
-            `${isEven ? "after:left-[-28px]" : "after:right-[-28px]"}`
+            "after:bg-[#24292d] after:absolute after:top-[-5px]  after:z-10 hover:after:bg-[#eaa023]",
+            `${
+               isEven
+                  ? "after:left-timeline-circle-left"
+                  : "after:right-timeline-circle-right"
+            }`
          )}
       >
          <div className="">

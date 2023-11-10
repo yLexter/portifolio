@@ -28,6 +28,15 @@ const config: Config = {
             "spacing-page": "15%",
             "header-height": "96px",
          },
+
+         margin: {
+            "spacing-section": "5rem",
+         },
+
+         spacing: {
+            "timeline-circle-right": "calc(-13% + 0.1px)",
+            "timeline-circle-left": "calc(-13% - 1.3px)",
+         },
       },
    },
    plugins: [],
