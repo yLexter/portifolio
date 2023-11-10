@@ -1,7 +1,7 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { Button } from "../UI/Button/Button";
-import { SocialIcons } from "../UI/socials/SocialIcon";
+import { SocialIcons } from "../UI/Socials/SocialIcon";
 
 type IPropPresetation = {
    className?: string;

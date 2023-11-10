@@ -25,9 +25,9 @@ export default function ({}: IProp) {
    ];
 
    return (
-      <div className="mb-spacing-section px-spacing-page h-auto">
+      <section className="px-spacing-page h-auto mb-spacing-section">
          <SectionTitle title="Timeline" />
          <Timeline data={timelineData} />
-      </div>
+      </section>
    );
 }

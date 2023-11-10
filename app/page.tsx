@@ -5,6 +5,7 @@ import Projects from "./components/projects/Projects";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Footer from "./components/footer/Footer";
 import MyTimeLine from "./components/myTimeline/MyTimeLine";
+import Skills from "./components/skills/Skills";
 
 export default function Home() {
    return (
@@ -12,6 +13,7 @@ export default function Home() {
          <Header />
          <Main />
          <AboutMe />
+         <Skills />
          <MyTimeLine />
          <Projects />
          <Footer />

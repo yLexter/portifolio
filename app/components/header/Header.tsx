@@ -13,7 +13,7 @@ export default function Header({}: IPropHeader) {
    return (
       <header
          className={twJoin(
-            `${scrollPosition > 0 ? "bg-black" : "bg-inherit"}`,
+            `${scrollPosition > 0 ? "bg-[#070916]" : "bg-transparent"}`,
             "transtion duration-300 ease-in-out",
             "fixed top-0 left-0 w-full h-header-height",
             "flex justify-around items-center z-10 px-spacing-page"

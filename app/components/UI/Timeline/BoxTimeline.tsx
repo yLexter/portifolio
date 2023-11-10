@@ -24,7 +24,8 @@ export default function BoxTimeline({
                isEven
                   ? "after:left-timeline-circle-left"
                   : "after:right-timeline-circle-right"
-            }`
+            }`,
+            `${index > 0 ? "mt-4" : ""}`
          )}
       >
          <div className="">

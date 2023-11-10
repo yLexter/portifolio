@@ -30,7 +30,7 @@ const config: Config = {
          },
 
          margin: {
-            "spacing-section": "5rem",
+            "spacing-section": "4rem",
          },
 
          spacing: {
