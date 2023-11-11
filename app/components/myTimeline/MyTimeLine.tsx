@@ -2,6 +2,7 @@ import React from "react";
 import Timeline from "../UI/Timeline/Timeline";
 import { TDataTimeline } from "../../entities";
 import SectionTitle from "../UI/Texts/SectionTitle";
+import BaseSection from "../UI/Section/BaseSection";
 
 type IProp = {};
 
@@ -25,9 +26,9 @@ export default function ({}: IProp) {
    ];
 
    return (
-      <section className="px-spacing-page h-auto mb-spacing-section">
+      <BaseSection className="px-spacing-page h-auto mb-spacing-section">
          <SectionTitle title="Timeline" />
          <Timeline data={timelineData} />
-      </section>
+      </BaseSection>
    );
 }

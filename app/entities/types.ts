@@ -13,7 +13,14 @@ export type TRandomIcon =
    | "Github"
    | "Linkedin"
    | "Twitter"
+   | "Git"
    | "NextJs";
+
+export type TSkill = {
+   title: string;
+   icons: TRandomIcon[];
+   description: string;
+};
 
 export const TRandomIconColors: Record<TRandomIcon, string> = {
    JavaScript: "#F7DF1E",
@@ -22,14 +29,15 @@ export const TRandomIconColors: Record<TRandomIcon, string> = {
    CSS: "#2965F1",
    React: "#61DAFB",
    NodeJs: "#8CC84B",
-   Python: "#3776AB",
+   Python: "#FFFFFF",
    Java: "#007396",
    ExpressJs: "#FFFFFF",
-   C: "#A8B9CC",
+   C: "#5690ff",
    MongoDB: "#4DB33D",
    NextJs: "#FFFFFF",
    Github: "#FFFFFF",
    Linkedin: "#FFFFFF",
+   Git: "#f05033",
    Twitter: "#FFFFFF",
 } as const;
 

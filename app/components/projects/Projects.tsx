@@ -5,6 +5,7 @@ import React from "react";
 import Project from "./Project";
 import useFetch from "../hooks/useFetch";
 import SectionTitle from "../UI/Texts/SectionTitle";
+import BaseSection from "../UI/Section/BaseSection";
 
 type IPropProjects = {};
 
@@ -18,7 +19,7 @@ export default function Projects({}: IPropProjects) {
    if (error) return <p>{error.message}</p>;
 
    return (
-      <section className="px-spacing-page mb-spacing-section">
+      <BaseSection>
          <SectionTitle title="Projetos" />
 
          <div>
@@ -30,6 +31,6 @@ export default function Projects({}: IPropProjects) {
                />
             ))}
          </div>
-      </section>
+      </BaseSection>
    );
 }

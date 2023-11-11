@@ -4,17 +4,17 @@ import IconWithLink from "./IconWithLink";
 export const SocialIcons = {
    Github: () => (
       <IconWithLink url="google.com">
-         <CustomIcon icon="Github" />
+         <CustomIcon className="hover:scale-150 duration-300" icon="Github" />
       </IconWithLink>
    ),
    Twitter: () => (
       <IconWithLink url="google.com">
-         <CustomIcon icon="Twitter" />
+         <CustomIcon className="hover:scale-150 duration-300" icon="Twitter" />
       </IconWithLink>
    ),
    Linkedin: () => (
       <IconWithLink url="google.com">
-         <CustomIcon icon="Linkedin" />
+         <CustomIcon className="hover:scale-150 duration-300" icon="Linkedin" />
       </IconWithLink>
    ),
 };

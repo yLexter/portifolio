@@ -2,12 +2,13 @@ import React from "react";
 import Timeline from "../UI/Timeline/Timeline";
 import { TDataTimeline } from "@/app/entities";
 import SectionTitle from "../UI/Texts/SectionTitle";
+import BaseSection from "../UI/Section/BaseSection";
 
 type IPropAboutMe = {};
 
 export default function AboutMe({}: IPropAboutMe) {
    return (
-      <section className="pl-spacing-page pr-spacing-page mb-spacing-section">
+      <BaseSection>
          <SectionTitle title="Sobre mim" />
 
          <main className="flex gap-x-16">
@@ -27,6 +28,6 @@ export default function AboutMe({}: IPropAboutMe) {
 
             <div className="flex-1"></div>
          </main>
-      </section>
+      </BaseSection>
    );
 }

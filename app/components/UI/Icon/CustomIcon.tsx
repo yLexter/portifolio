@@ -1,8 +1,8 @@
 import { TRandomIconColors, TRandomIcon } from "@/app/entities";
 import React from "react";
 
-import { TbBrandCpp } from "react-icons/tb";
-
+import { TbLetterC } from "react-icons/tb";
+import { BiLogoGit } from "react-icons/bi";
 import {
    FaReact,
    FaNode,
@@ -23,13 +23,21 @@ import {
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { IconType } from "react-icons";
+import { twMerge } from "tailwind-merge";
 
 type IPropCustomIcon = {
    icon: TRandomIcon;
    hasName?: boolean;
+   hasColor?: boolean;
+   className?: string;
 };
 
-export default function CustomIcon({ icon, hasName = false }: IPropCustomIcon) {
+export default function CustomIcon({
+   icon,
+   hasName = false,
+   className,
+   hasColor = false,
+}: IPropCustomIcon) {
    const randomIcons: Record<TRandomIcon, IconType> = {
       JavaScript: FaJsSquare,
       TypeScript: SiTypescript,
@@ -40,21 +48,27 @@ export default function CustomIcon({ icon, hasName = false }: IPropCustomIcon) {
       Python: FaPython,
       Java: FaJava,
       ExpressJs: FaNode,
-      C: TbBrandCpp,
+      C: TbLetterC,
       MongoDB: DiMongodb,
       NextJs: SiNextdotjs,
       Twitter: SiTwitter,
       Github: SiGithub,
       Linkedin: SiLinkedin,
+      Git: BiLogoGit,
    };
 
    const IconSelected = randomIcons[icon];
+   const colorIcon = TRandomIconColors[icon];
 
    if (!IconSelected) throw new Error("Icon Provided is invalid");
 
    return (
       <div className="flex items-center flex-col gap-y-1">
-         <IconSelected size={28} color={TRandomIconColors[icon]} />
+         <IconSelected
+            color={hasColor ? colorIcon : "white"}
+            className={twMerge("", className)}
+            size={28}
+         />
          {hasName && (
             <span className="text-base text-color-text-secondary">{icon}</span>
          )}
