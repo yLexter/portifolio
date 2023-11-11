@@ -30,13 +30,18 @@ const ProjectInformation = ({
 
          <div className="flex gap-x-4 justify-center mb-4">
             {languages.map((iconLanguge) => {
-               return <CustomIcon icon={iconLanguge} />;
+               return (
+                  <CustomIcon
+                     key={`Project-${name}-${iconLanguge}`}
+                     icon={iconLanguge}
+                  />
+               );
             })}
          </div>
 
          <div className="flex gap-x-4 justify-center">
             <Button.Provider
-               disabled={!!github}
+               disabled={!!!github}
                className="bg-inherit solid border-2 border-purple-700 text-color-text-secondary"
             >
                <Button.Icon color="white" Icon={AiFillGithub} />
@@ -44,7 +49,7 @@ const ProjectInformation = ({
             </Button.Provider>
 
             <Button.Provider
-               disabled={!!liveDemo}
+               disabled={!!!liveDemo}
                className="bg-inherit solid border-2 border-purple-700 text-color-text-secondary"
             >
                Live Demo

@@ -6,31 +6,26 @@ import Project from "./Project";
 import useFetch from "../hooks/useFetch";
 import SectionTitle from "../UI/Texts/SectionTitle";
 import BaseSection from "../UI/Section/BaseSection";
+import { useJsonDataContext } from "@/contexts/JsonProvider";
 
 type IPropProjects = {};
 
 export default function Projects({}: IPropProjects) {
-   const { data, loading, error } = useFetch<{ projects: TProject[] }>(
-      "./jsons/portfolio.json"
-   );
-
-   if (loading) return <p>Loading</p>;
-   if (!data) return <p>No data found!</p>;
-   if (error) return <p>{error.message}</p>;
+   const { currentData } = useJsonDataContext();
 
    return (
       <BaseSection>
          <SectionTitle title="Projetos" />
 
-         <div>
-            {data.projects.map((project, index) => (
+         <>
+            {currentData.projects.map((project, index) => (
                <Project
                   index={index}
                   key={`Project-${project.name}`}
                   project={project}
                />
             ))}
-         </div>
+         </>
       </BaseSection>
    );
 }

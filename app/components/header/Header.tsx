@@ -4,11 +4,13 @@ import React from "react";
 import NavBar from "./NavBar";
 import { twJoin, twMerge } from "tailwind-merge";
 import useScrollPosition from "../hooks/useScrollPosition";
+import { useJsonDataContext } from "@/contexts/JsonProvider";
 
 type IPropHeader = {};
 
 export default function Header({}: IPropHeader) {
    const { scrollPosition } = useScrollPosition();
+   const { data } = useJsonDataContext();
 
    return (
       <header
@@ -20,7 +22,7 @@ export default function Header({}: IPropHeader) {
          )}
       >
          <h1 className="text-2xl font-semibold flex-1 text-color-text-main ">
-            Lucas Maia
+            {data.name}
          </h1>
          <NavBar className="flex-1" />
       </header>

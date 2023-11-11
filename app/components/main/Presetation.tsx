@@ -1,13 +1,23 @@
+"use client";
+
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { Button } from "../UI/Button/Button";
-import { SocialIcons } from "../UI/Socials/SocialIcon";
+import { useJsonDataContext } from "@/contexts/JsonProvider";
+import GetSocialsIcons from "../UI/Socials/SocialIcon";
 
 type IPropPresetation = {
    className?: string;
 };
 
 export default function Presetation({ className }: IPropPresetation) {
+   const {
+      currentData: { about },
+      data,
+   } = useJsonDataContext();
+
+   const SocialIcons = GetSocialsIcons();
+
    return (
       <div
          className={twMerge(
@@ -17,26 +27,21 @@ export default function Presetation({ className }: IPropPresetation) {
       >
          <div className="mb-4">
             <h1 className="text-color-text-main text-[2rem] font-bold">
-               Olá, Eu sou o
+               {about.presetation}
                <span className="ml-1 bg-clip-text text-transparent bg-gradient-to-r from-[#28af3a] to-[#019a23]">
-                  Lucas Maia
+                  {data.name}
                </span>
             </h1>
 
             <p className="text-[1.5rem] font-semibold text-color-text-main">
-               Eu sou um{" "}
+               {about.profession.presetation}{" "}
                <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#6320cf] to-[#be0ab5] ">
-                  Desenvolvedor Web
+                  {about.profession.profession}
                </span>{" "}
             </p>
          </div>
 
-         <p className="text-[rgb(255,255,255,0.5)] mb-4">
-            Venho me dedicando todos os dias em programação. Desde o início, não
-            houve um único dia em que não tenha continuado a aprender, com o
-            objetivo de me tornar um desenvolvedor Full Stack excepcional. Meu
-            foco é resolver problemas do mercado
-         </p>
+         <p className="text-[rgb(255,255,255,0.5)] mb-4">{about.aboutMe}</p>
 
          <div className="flex gap-x-4 mb-4">
             <SocialIcons.Github />
@@ -46,11 +51,11 @@ export default function Presetation({ className }: IPropPresetation) {
 
          <div className="flex gap-x-4">
             <Button.Provider className=" bg-secondary h-12 w-40 hover:opacity-90 text-color-text-main font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out">
-               Sobre Mim
+               {about.buttons.aboutMe}
             </Button.Provider>
 
             <Button.Provider className=" bg-secondary h-12 w-40 hover:opacity-90 text-color-text-main font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out">
-               Meu CV
+               {about.buttons.cv}
             </Button.Provider>
          </div>
       </div>

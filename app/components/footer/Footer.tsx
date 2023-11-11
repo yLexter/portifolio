@@ -1,15 +1,17 @@
 "use client";
 
 import React from "react";
-import { SocialIcons } from "../UI/Socials/SocialIcon";
-import useScrollPosition from "../hooks/useScrollPosition";
 import { twMerge } from "tailwind-merge";
-
+import GetSocialsIcons from "../UI/Socials/SocialIcon";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import { useJsonDataContext } from "@/contexts/JsonProvider";
 
 type IPropFooter = {};
 
 export default function Footer({}: IPropFooter) {
+   const SocialIcons = GetSocialsIcons();
+   const { data } = useJsonDataContext();
+
    const handleClick = () => {
       window.scrollTo({
          top: 0,
@@ -27,7 +29,7 @@ export default function Footer({}: IPropFooter) {
             </div>
 
             <span className="text-color-text-main text-center">
-               © 2023 - Lucas Maia.
+               © 2023 - {data.name}.
             </span>
          </div>
 

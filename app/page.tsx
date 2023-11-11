@@ -6,10 +6,11 @@ import AboutMe from "./components/aboutMe/AboutMe";
 import Footer from "./components/footer/Footer";
 import MyTimeLine from "./components/myTimeline/MyTimeLine";
 import Skills from "./components/skills/Skills";
+import ContextProvider from "@/contexts/ContextProvider";
 
 export default function Home() {
    return (
-      <>
+      <ContextProvider>
          <Header />
          <Main />
          <AboutMe />
@@ -17,6 +18,6 @@ export default function Home() {
          <MyTimeLine />
          <Projects />
          <Footer />
-      </>
+      </ContextProvider>
    );
 }
