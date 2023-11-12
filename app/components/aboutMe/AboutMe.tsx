@@ -25,7 +25,7 @@ export default function AboutMe({}: IPropAboutMe) {
                </p>
             </div>
 
-            <div className="flex-1"></div>
+            <div className="flex-0 md:flex-1 md:hidden"></div>
          </main>
       </BaseSection>
    );

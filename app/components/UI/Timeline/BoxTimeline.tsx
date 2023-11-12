@@ -16,14 +16,15 @@ export default function BoxTimeline({
    return (
       <div
          className={twJoin(
-            isEven ? "ml-auto" : "mr-auto",
-            "p-4 rounded bg-[#24292d] w-[45%] relative",
-            "after:content-[''] after:w-4 after:h-4 after:rounded-full",
-            "after:bg-[#24292d] after:absolute after:top-[-5px]  after:z-10 hover:after:bg-[#eaa023]",
+            isEven ? "md:ml-auto" : "md:mr-auto",
+            "md:w-[45%] md:after:hidden",
+            "p-4 rounded bg-[#24292d] w-full relative",
+            "md:after:content-[''] md:after:w-4 md:after:h-4 md:after:rounded-full",
+            "md:after:bg-[#24292d] md:after:absolute md:after:top-[-5px]  md:after:z-10 hover:md:after:bg-[#eaa023]",
             `${
                isEven
-                  ? "after:left-timeline-circle-left"
-                  : "after:right-timeline-circle-right"
+                  ? "md:after:left-timeline-circle-left"
+                  : "md:after:right-timeline-circle-right"
             }`,
             `${index > 0 ? "mt-4" : ""}`
          )}

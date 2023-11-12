@@ -2,7 +2,7 @@ import React from "react";
 import { twJoin, twMerge } from "tailwind-merge";
 
 type IPropProvider = {
-   className: string;
+   className?: string;
 } & Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "className">;
 
 export default function Provider({ className, ...props }: IPropProvider) {
