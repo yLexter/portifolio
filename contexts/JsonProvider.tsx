@@ -1,6 +1,6 @@
 "use client";
 
-import { TDataTimeline, TProject, TSkill } from "@/app/entities";
+import { CSectionNames, TDataTimeline, TProject, TSkill } from "@/app/entities";
 import React, { useContext, useEffect, useState, createContext } from "react";
 import json from "../public/jsons/portfolio.json";
 

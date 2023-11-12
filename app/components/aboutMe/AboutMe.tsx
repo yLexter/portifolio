@@ -2,7 +2,7 @@
 
 import React from "react";
 import Timeline from "../UI/Timeline/Timeline";
-import { TDataTimeline } from "@/app/entities";
+import { CSectionNames, TDataTimeline } from "@/app/entities";
 import SectionTitle from "../UI/Texts/SectionTitle";
 import BaseSection from "../UI/Section/BaseSection";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
@@ -15,7 +15,7 @@ export default function AboutMe({}: IPropAboutMe) {
    } = useJsonDataContext();
 
    return (
-      <BaseSection>
+      <BaseSection id={CSectionNames.aboutMe}>
          <SectionTitle title={sectionTitle.aboutMe} />
 
          <main className="flex gap-x-16">

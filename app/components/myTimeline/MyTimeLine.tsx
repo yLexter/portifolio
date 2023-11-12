@@ -2,7 +2,7 @@
 
 import React from "react";
 import Timeline from "../UI/Timeline/Timeline";
-import { TDataTimeline } from "../../entities";
+import { CSectionNames, TDataTimeline } from "../../entities";
 import SectionTitle from "../UI/Texts/SectionTitle";
 import BaseSection from "../UI/Section/BaseSection";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
@@ -15,7 +15,10 @@ export default function ({}: IProp) {
    } = useJsonDataContext();
 
    return (
-      <BaseSection className="px-spacing-page h-auto mb-spacing-section">
+      <BaseSection
+         id={CSectionNames.timeline}
+         className="px-spacing-page h-auto mb-spacing-section"
+      >
          <SectionTitle title={sectionTitle.timeline} />
          <Timeline data={timeline} />
       </BaseSection>

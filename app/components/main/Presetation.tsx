@@ -21,7 +21,7 @@ export default function Presetation({ className }: IPropPresetation) {
    return (
       <div
          className={twMerge(
-            "w-full md:w-9/12 lg:w-10/12 flex min-h-[400px] justify-center flex-col gap-y-3",
+            "w-full md:w-7/12 lg:w-8/12 flex min-h-[400px] justify-center flex-col gap-y-3",
             className
          )}
       >

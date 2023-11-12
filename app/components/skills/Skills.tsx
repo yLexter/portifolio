@@ -5,6 +5,7 @@ import SectionTitle from "../UI/Texts/SectionTitle";
 import Skill from "./Skill";
 import BaseSection from "../UI/Section/BaseSection";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
+import { CSectionNames } from "@/app/entities";
 
 type IPropSkill = {};
 
@@ -14,7 +15,7 @@ export default function Skills({}: IPropSkill) {
    } = useJsonDataContext();
 
    return (
-      <BaseSection>
+      <BaseSection id={CSectionNames.skills}>
          <SectionTitle title={sectionTitle.skills} />
 
          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

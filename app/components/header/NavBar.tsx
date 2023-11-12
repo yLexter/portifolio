@@ -1,23 +1,30 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import ListNaveBar from "./ListNaveBar";
+import Menu from "./Menu";
 
 type IPropNav = {
    className?: string;
 };
 
 export default function NavBar({ className }: IPropNav) {
-   const classNameLi =
-      "text-color-text-main font-light text-xl hover:text-secondary curson-pointer";
+   const [menuOpen, setMenuOpen] = useState(false);
+
+   const toggleMenu = () => {
+      document.body.style.overflowY = !menuOpen ? "hidden" : "inherit";
+      setMenuOpen(!menuOpen);
+   };
 
    return (
       <nav className={twMerge("", className)}>
-         <ul className="flex justify-between">
-            <li className={classNameLi}>Início</li>
-            <li className={classNameLi}>Sobre Mim</li>
-            <li className={classNameLi}>Skills</li>
-            <li className={classNameLi}>Projetos</li>
-            <li className={classNameLi}>Contate-me</li>
-         </ul>
+         <ListNaveBar className="hidden md:flex md:justify-between" />
+         <Menu
+            isOpen={menuOpen}
+            toggleMenu={toggleMenu}
+            className="md:hidden"
+         />
       </nav>
    );
 }

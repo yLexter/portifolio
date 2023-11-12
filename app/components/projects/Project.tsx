@@ -28,7 +28,7 @@ const ProjectInformation = ({
    project: { name, github, liveDemo, description, languages },
 }: IProject) => {
    return (
-      <div className="flex-1">
+      <div className="w-full md:w-1/2">
          <div className="mb-4">
             <h1 className="text-2xl text-center font-semibold text-color-text-main mb-4">
                {name}
@@ -79,7 +79,7 @@ const ProjectImage = ({
    const urlRepository = liveDemo || github;
 
    return (
-      <div className="flex flex-1 items-start justify-center sm:hidden sm:flex-[0]">
+      <div className="hidden items-start justify-center md:w-1/2 md:flex">
          <figure className="shadow-lg hover:scale-105">
             <a href={urlRepository} target="_blank">
                <img
@@ -95,7 +95,7 @@ const ProjectImage = ({
 
 export default function Project({ project, index }: IPropProject) {
    return (
-      <article className="flex mb-16 gap-x-16 md:gap-x-1">
+      <article className="flex mb-16 md:gap-x-16">
          {index % 2 == 0 && (
             <>
                <ProjectInformation project={project} />

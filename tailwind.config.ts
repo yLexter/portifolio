@@ -34,6 +34,7 @@ const config: Config = {
          },
 
          spacing: {
+            "header-height": "96px",
             "timeline-circle-right": "calc(-13% + 0.1px)",
             "timeline-circle-left": "calc(-13% - 1.3px)",
          },

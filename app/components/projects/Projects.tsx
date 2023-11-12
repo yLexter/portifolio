@@ -1,6 +1,6 @@
 "use client";
 
-import { TProject } from "@/app/entities";
+import { CSectionNames, TProject } from "@/app/entities";
 import React from "react";
 import Project from "./Project";
 import useFetch from "../hooks/useFetch";
@@ -14,7 +14,7 @@ export default function Projects({}: IPropProjects) {
    const { currentData } = useJsonDataContext();
 
    return (
-      <BaseSection>
+      <BaseSection id={CSectionNames.projects}>
          <SectionTitle title="Projetos" />
 
          <>
