@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
    content: [
@@ -35,11 +36,13 @@ const config: Config = {
 
          spacing: {
             "header-height": "96px",
-            "timeline-circle-right": "calc(-13% + 0.1px)",
-            "timeline-circle-left": "calc(-13% - 1.3px)",
+            "timeline-circle-right": "calc(-13.1% + 0.1px)",
+            "timeline-circle-left": "calc(-13.1% - 1px)",
          },
       },
    },
+
    plugins: [],
 };
+
 export default config;

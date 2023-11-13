@@ -1,48 +1,14 @@
 "use client";
 
-import { CSectionNames, TDataTimeline, TProject, TSkill } from "@/app/entities";
+import { TJsonData, TJsonLanguageData, TLanguages } from "@/app/entities";
 import React, { useContext, useEffect, useState, createContext } from "react";
 import json from "../public/jsons/portfolio.json";
 
-type TLanguages = keyof typeof json.languages;
-
-type TJsonLanguageData = {
-   sectionTitle: {
-      aboutMe: string;
-      skills: string;
-      timeline: string;
-      projects: string;
-   };
-   about: {
-      presetation: string;
-      profession: {
-         presetation: string;
-         profession: string;
-      };
-      aboutMe: string;
-      buttons: {
-         cv: string;
-         aboutMe: string;
-      };
-   };
-   timeline: TDataTimeline[];
-   projects: TProject[];
-   skills: TSkill[];
-};
-
-type TJsonData = {
-   name: string;
-   socials: {
-      github: string;
-      linkedin: string;
-      twitter: string;
-   };
-   languages: Record<TLanguages, TJsonLanguageData>;
-};
-
-type TJsonProvider = {
+export type TJsonProvider = {
    data: TJsonData;
    currentData: TJsonLanguageData;
+   language: TLanguages;
+   setLanguage: (language: TLanguages) => void;
 };
 
 const JsonContext = createContext({} as TJsonProvider);
@@ -52,11 +18,21 @@ export const JsonContextProvider = ({
 }: {
    children: React.ReactNode;
 }) => {
+   const [currentLanguage, setCurrentLanguage] = useState<TLanguages>("pt_BR");
+
+   const handleCurrentLanguage = (language: TLanguages) => {
+      setCurrentLanguage(language);
+   };
+
    return (
       <JsonContext.Provider
          value={{
+            language: currentLanguage,
+            setLanguage: handleCurrentLanguage,
             data: json as TJsonData,
-            currentData: json["languages"]["pt_BR"] as TJsonLanguageData,
+            currentData: json["languages"][
+               currentLanguage
+            ] as TJsonLanguageData,
          }}
       >
          {children}

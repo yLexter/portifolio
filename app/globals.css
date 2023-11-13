@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.paragraph-responsive {
+   @apply md:text-base lg:text-lg;
+}
+
+.title-responsive {
+   @apply text-xl md:text-2xl lg:text-3xl;
+}

@@ -13,9 +13,9 @@ export default function Timeline({ data, className }: IPropTimeline) {
       <div
          className={twMerge(
             "relative h-auto",
-            "md:after:content-[''] md:after:absolute md:after:w-1 md:after:h-full md:after:bg-[#24292d] md:after:top-0",
-            "md:after:ml-[-3px] md:after:left-1/2",
-            "after:hidden",
+            "after:content-[''] after:absolute after:w-1 after:h-full after:bg-[#24292d] after:top-0",
+            "after:ml-[-3px] after:left-1/2",
+            "max-[768px]:after:hidden",
             className
          )}
       >

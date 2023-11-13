@@ -19,6 +19,7 @@ const getClassNameButton = (state: string | undefined) => {
    return twMerge(
       `bg-inherit text-color-text-main duration-300 border-secondary solid border-2 font-semibold p-4 flex rounded-lg`,
       "md:text-sm md:flex-1 md:gap-x-2",
+      "lg:w-36 lg:h-12 lg:text-xl",
       `${!!state ? "hover:bg-secondary hover:text-color-text-main" : ""} `,
       `${!!state ? "active:bg-secondary active:text-color-text-main" : ""} `
    );
@@ -30,10 +31,10 @@ const ProjectInformation = ({
    return (
       <div className="w-full md:w-1/2">
          <div className="mb-4">
-            <h1 className="text-2xl text-center font-semibold text-color-text-main mb-4">
+            <h1 className="text-center font-semibold text-color-text-main mb-4 title-responsive ">
                {name}
             </h1>
-            <p className="text-color-text-secondary text-xl text-center">
+            <p className="text-color-text-secondary text-center paragraph-responsive">
                {description}
             </p>
          </div>
@@ -50,7 +51,7 @@ const ProjectInformation = ({
          </div>
 
          <div className="flex gap-x-4 justify-center">
-            <a target="_blank" href={github}>
+            <a className="inline-block" target="_blank" href={github}>
                <Button.Provider
                   disabled={!!!github}
                   className={getClassNameButton(github)}
@@ -59,7 +60,7 @@ const ProjectInformation = ({
                   <Button.Icon color="white" Icon={AiFillGithub} />
                </Button.Provider>
             </a>
-            <a target="_blank" href={liveDemo}>
+            <a className="inline-block" target="_blank" href={liveDemo}>
                <Button.Provider
                   disabled={!!!liveDemo}
                   className={getClassNameButton(liveDemo)}

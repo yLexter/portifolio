@@ -22,10 +22,12 @@ export default function Skill({
             ))}
          </div>
 
-         <h3 className="font-semibold text-xl text-color-text-main mb-2">
+         <h3 className="font-semibold text-xl text-color-text-main mb-2 title-responsive">
             {title}
          </h3>
-         <p className="text-color-text-secondary">{description}</p>
+         <p className="text-color-text-secondary paragraph-responsive">
+            {description}
+         </p>
       </article>
    );
 }

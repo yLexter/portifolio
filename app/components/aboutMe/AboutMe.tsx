@@ -18,15 +18,21 @@ export default function AboutMe({}: IPropAboutMe) {
       <BaseSection id={CSectionNames.aboutMe}>
          <SectionTitle title={sectionTitle.aboutMe} />
 
-         <main className="flex gap-x-16">
-            <div className="flex-1">
-               <p className="text-lg text-color-text-secondary">
+         <div className="flex gap-x-16">
+            <div className="w-full md:w-1/2">
+               <p className=" text-color-text-secondary paragraph-responsive">
                   {about.aboutMe}
                </p>
             </div>
 
-            <div className="flex-0 md:flex-1 md:hidden"></div>
-         </main>
+            <div className="hidden md:w-1/2 md:block">
+               <img
+                  className="w-11/12 h-11/12"
+                  alt="About me"
+                  src="./images/about-me.png"
+               />
+            </div>
+         </div>
       </BaseSection>
    );
 }

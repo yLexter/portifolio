@@ -19,11 +19,11 @@ export default function NavBar({ className }: IPropNav) {
 
    return (
       <nav className={twMerge("", className)}>
-         <ListNaveBar className="hidden md:flex md:justify-between" />
+         <ListNaveBar className="hidden lg:flex lg:justify-between" />
          <Menu
             isOpen={menuOpen}
             toggleMenu={toggleMenu}
-            className="md:hidden"
+            className="lg:hidden"
          />
       </nav>
    );

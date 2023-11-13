@@ -28,7 +28,7 @@ export default function Footer({}: IPropFooter) {
                <SocialIcons.Twitter />
             </div>
 
-            <span className="text-color-text-main text-center">
+            <span className="text-color-text-main text-center paragraph-responsive">
                © 2023 - {data.name}.
             </span>
          </div>
@@ -36,7 +36,7 @@ export default function Footer({}: IPropFooter) {
          <button
             onClick={handleClick}
             className={twMerge(
-               "ease-in-out duration-1000 absolute right-[5%] top-[-10%] w-10 h-10 bg-slate-600",
+               "ease-in-out duration-1000 absolute right-[5%] top-[-10%] w-14 h-14",
                "bg-secondary rounded-lg shadow-lg flex justify-center items-center"
             )}
          >

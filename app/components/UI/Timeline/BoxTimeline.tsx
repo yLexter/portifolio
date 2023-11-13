@@ -17,26 +17,27 @@ export default function BoxTimeline({
       <div
          className={twJoin(
             isEven ? "md:ml-auto" : "md:mr-auto",
-            "md:w-[45%] md:after:hidden",
+            "w-full md:w-[45%]",
+            "max-[768px]:after:hidden",
             "p-4 rounded bg-[#24292d] w-full relative",
-            "md:after:content-[''] md:after:w-4 md:after:h-4 md:after:rounded-full",
-            "md:after:bg-[#24292d] md:after:absolute md:after:top-[-5px]  md:after:z-10 hover:md:after:bg-[#eaa023]",
+            "after:content-[''] after:w-4 after:h-4 after:rounded-full",
+            "after:bg-[#24292d] after:absolute after:top-[-5px]  after:z-10 hover:after:bg-[#eaa023]",
             `${
                isEven
-                  ? "md:after:left-timeline-circle-left"
-                  : "md:after:right-timeline-circle-right"
+                  ? "after:left-timeline-circle-left"
+                  : "after:right-timeline-circle-right"
             }`,
             `${index > 0 ? "mt-4" : ""}`
          )}
       >
-         <div className="">
-            <h2 className="font-semibold text-xl text-color-text-main">
+         <div className="flex flex-col gap-y-1">
+            <h2 className="font-semibold text-color-text-main title-responsive ">
                {title}
             </h2>
-            <span className="text-xs text-color-text-secondary font-semibold mb-4">
+            <span className="italic text-xs text-color-text-secondary font-400 paragraph-responsive">
                {date}
             </span>
-            <p className="text-color-text-secondary text-sm text-justify">
+            <p className="text-color-text-secondary text-justify paragraph-responsive">
                {text}
             </p>
          </div>

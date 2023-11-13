@@ -8,6 +8,11 @@ export const CSectionNames = {
    projects: "projects",
 } as const;
 
+export const CLanguages = {
+   pt: "pt_BR",
+   en: "en_US",
+};
+
 export const TRandomIconColors: Record<TRandomIcon, string> = {
    JavaScript: "#F7DF1E",
    TypeScript: "#3178C6",

@@ -25,7 +25,7 @@ export default function Header({}: IPropHeader) {
          <h1 className="text-2xl font-semibold w-1/2 text-color-text-main ">
             {data.name}
          </h1>
-         <NavBar className="w-auto md:w-1/2" />
+         <NavBar className="w-auto lg:w-1/2" />
       </header>
    );
 }
