@@ -4,7 +4,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import { Button } from "../UI/Button/Button";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
-import GetSocialsIcons from "../UI/Socials/SocialIcon";
+import SocialIcon from "../UI/Socials/SocialIcon";
 import { CSectionNames, TSectionName } from "@/app/entities";
 
 type IPropPresetation = {
@@ -27,7 +27,7 @@ export default function Presetation({ className }: IPropPresetation) {
       data,
    } = useJsonDataContext();
 
-   const SocialIcons = GetSocialsIcons();
+   const SocialIcons = SocialIcon();
 
    return (
       <div

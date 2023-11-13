@@ -4,7 +4,7 @@ import { useJsonDataContext } from "@/contexts/JsonProvider";
 import CustomIcon from "../Icon/CustomIcon";
 import IconWithLink from "./IconWithLink";
 
-export default function GetSocialsIcons() {
+export default function SocialIcon() {
    const {
       data: { socials },
    } = useJsonDataContext();

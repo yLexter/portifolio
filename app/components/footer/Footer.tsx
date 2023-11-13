@@ -2,14 +2,14 @@
 
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import GetSocialsIcons from "../UI/Socials/SocialIcon";
+import SocialIcon from "../UI/Socials/SocialIcon";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 
 type IPropFooter = {};
 
 export default function Footer({}: IPropFooter) {
-   const SocialIcons = GetSocialsIcons();
+   const SocialIcons = SocialIcon();
    const { data } = useJsonDataContext();
 
    const handleClick = () => {
