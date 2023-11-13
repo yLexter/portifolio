@@ -1,6 +1,5 @@
 import React from "react";
 import Presetation from "./Presetation";
-import Skills from "../skills/Skills";
 import BaseSection from "../UI/Section/BaseSection";
 import { CSectionNames } from "@/app/entities";
 

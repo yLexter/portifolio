@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 import { Button } from "../UI/Button/Button";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 import { CSectionNames, TSectionName } from "@/app/entities";
-import { SocialIcon } from "../UI/Socials/SocialIcon";
+import { SocialIcon } from "../UI/SocialsIcons/SocialIcon";
 
 type IPropPresetation = {
    className?: string;

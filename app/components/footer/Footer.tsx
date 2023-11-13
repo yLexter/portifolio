@@ -2,7 +2,7 @@
 
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import { SocialIcon } from "../UI/Socials/SocialIcon";
+import { SocialIcon } from "../UI/SocialsIcons/SocialIcon";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 
