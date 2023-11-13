@@ -2,7 +2,7 @@
     "name": "Lucas Maia",
     "socials": {
         "github": "https://github.com/yLexter/Exercicios",
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/in/lucas-ferreira-maia-82a25b263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "twitter": "https://twitter.com/yLexter1"
     },
     "languages": {
@@ -19,7 +19,8 @@
                     "presetation": "Eu sou um",
                     "profession": "Desenvolvedor Web"
                 },
-                "aboutMe": " Venho me dedicando todos os dias em programação. Desde o início, não houve um único dia em que não tenha continuado a aprender, com o objetivo de me tornar um desenvolvedor Full Stack excepcional. Meu foco é resolver problemas do mercado",
+                "resume": "Sou um entusiasta da tecnologia e um apaixonado por transformar linhas de código em coisas incríveis. Desde o momento em que descobri o maravilhoso universo da programação, tenho mergulhado de cabeça em projetos e desafios.",
+                "aboutMe": "Me chamo Lucas Ferreira Maia, tenho 20 anos, moro em Campina Grande - PB e desde criança sempre tive uma paixão por matemática e tecnologias que me fez entrar no curso computação na Universidade Estadual da Paraíba (UEPB). Atualmente estou na procura da minha primeira vaga como desenvolvedor.",
                 "buttons": {
                     "cv": "Meu CV",
                     "aboutMe": "Sobre Mim"
@@ -53,12 +54,12 @@
                     "description": "Possuo amplo conhecimento em HTML e CSS para a criação de interfaces atraentes e responsivas. No JavaScript, possuo habilidades avançadas, incluindo o domínio de tópicos avançados como Promises, async/await, e manipulação eficiente de eventos."
                 },
                 {
-                    "title": "React & Next JS",
+                    "title": "Next JS & Typescript",
                     "icons": [
-                        "React",
-                        "NextJs"
+                        "NextJs",
+                        "TypeScript"
                     ],
-                    "description": "Desenvolvo aplicações web modernas e eficientes utilizando React para a construção de interfaces interativas. Tenho experiência avançada com Next.js para o desenvolvimento React server-side, proporcionando uma experiência de usuário otimizada."
+                    "description": "Desenvolvo aplicações web modernas e eficientes utilizando NextJS e Typescript. Tenho experiencia avançada com Typescript e média com NextJS"
                 },
                 {
                     "title": "Python, Java & C",

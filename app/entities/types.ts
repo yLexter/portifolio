@@ -56,6 +56,7 @@ export type TJsonLanguageData = {
          presetation: string;
          profession: string;
       };
+      resume: string;
       aboutMe: string;
       buttons: {
          cv: string;

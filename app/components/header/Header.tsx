@@ -5,11 +5,21 @@ import NavBar from "./NavBar";
 import { twJoin, twMerge } from "tailwind-merge";
 import useScrollPosition from "../hooks/useScrollPosition";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
+import { CSectionNames, TSectionName } from "@/app/entities";
 
 type IPropHeader = {};
 
+const handleSection = (sectionId: TSectionName) => {
+   const section = document.getElementById(sectionId);
+
+   if (section) {
+      section.scrollIntoView({
+         behavior: "smooth",
+      });
+   }
+};
+
 export default function Header({}: IPropHeader) {
-   const [menuOpen, setMenuOpen] = useState();
    const { scrollPosition } = useScrollPosition();
    const { data } = useJsonDataContext();
 
@@ -22,7 +32,10 @@ export default function Header({}: IPropHeader) {
             "flex justify-between items-center z-10 px-spacing-page"
          )}
       >
-         <h1 className="text-2xl font-semibold w-1/2 text-color-text-main ">
+         <h1
+            onClick={() => handleSection(CSectionNames.main)}
+            className="cursor-pointer text-2xl font-semibold w-1/2 text-color-text-main "
+         >
             {data.name}
          </h1>
          <NavBar className="w-auto lg:w-1/2" />

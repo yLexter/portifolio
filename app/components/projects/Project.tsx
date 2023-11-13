@@ -56,8 +56,8 @@ const ProjectInformation = ({
                   disabled={!!!github}
                   className={getClassNameButton(github)}
                >
-                  GitHub
                   <Button.Icon color="white" Icon={AiFillGithub} />
+                  GitHub
                </Button.Provider>
             </a>
             <a className="inline-block" target="_blank" href={liveDemo}>

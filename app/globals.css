@@ -7,5 +7,5 @@
 }
 
 .title-responsive {
-   @apply text-xl md:text-2xl lg:text-3xl;
+   @apply text-xl md:text-2xl lg:text-[1.65rem] lg:leading-[2rem];
 }

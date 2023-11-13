@@ -7,25 +7,26 @@ type IPropListNaveBar = {
    classNameLi?: string;
 };
 
+const handleSection = (sectionId: TSectionName) => {
+   const section = document.getElementById(sectionId);
+
+   if (section) {
+      section.scrollIntoView({
+         behavior: "smooth",
+      });
+   }
+};
+
 export default function ListNaveBar({
    className,
    classNameLi,
 }: IPropListNaveBar) {
    const classLi = twMerge(
-      "text-color-text-main font-light text-xl hover:text-secondary cursor-pointer active:text-secondary",
+      "relative text-color-text-main font-light text-xl cursor-pointer active:text-secondary",
+      "after:absolute after:content-[''] after:w-[0px] after:h-[2px] after:bg-secondary after:bottom-[-5px] after:left-0 after:duration-300",
+      "after:ease-in-out after:mb-1 hover:after:w-full",
       classNameLi
    );
-
-   const handleSection = (sectionId: TSectionName) => {
-      const section = document.getElementById(sectionId);
-
-      if (section) {
-         window.scrollTo({
-            top: section.getBoundingClientRect().top,
-            behavior: "smooth",
-         });
-      }
-   };
 
    return (
       <ul className={twMerge("", className)}>
@@ -41,17 +42,18 @@ export default function ListNaveBar({
          >
             Sobre Mim
          </li>
-         <li
-            onClick={() => handleSection(CSectionNames.timeline)}
-            className={classLi}
-         >
-            Timeline
-         </li>
+
          <li
             onClick={() => handleSection(CSectionNames.skills)}
             className={classLi}
          >
             Skills
+         </li>
+         <li
+            onClick={() => handleSection(CSectionNames.timeline)}
+            className={classLi}
+         >
+            Timeline
          </li>
          <li
             onClick={() => handleSection(CSectionNames.projects)}

@@ -5,9 +5,20 @@ import { twMerge } from "tailwind-merge";
 import { Button } from "../UI/Button/Button";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 import GetSocialsIcons from "../UI/Socials/SocialIcon";
+import { CSectionNames, TSectionName } from "@/app/entities";
 
 type IPropPresetation = {
    className?: string;
+};
+
+const handleSection = (sectionId: TSectionName) => {
+   const section = document.getElementById(sectionId);
+
+   if (section) {
+      section.scrollIntoView({
+         behavior: "smooth",
+      });
+   }
 };
 
 export default function Presetation({ className }: IPropPresetation) {
@@ -42,7 +53,7 @@ export default function Presetation({ className }: IPropPresetation) {
          </div>
 
          <p className="paragraph-responsive text-[rgb(255,255,255,0.5)] mb-4">
-            {about.aboutMe}
+            {about.resume}
          </p>
 
          <div className="flex gap-x-4 mb-4">
@@ -52,13 +63,18 @@ export default function Presetation({ className }: IPropPresetation) {
          </div>
 
          <div className="flex gap-x-4">
-            <Button.Provider className=" bg-secondary h-12 w-40 hover:opacity-90 text-color-text-main font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out">
+            <Button.Provider
+               onClick={() => handleSection(CSectionNames.aboutMe)}
+               className=" bg-secondary h-12 w-36 hover:opacity-90 text-color-text-main font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out"
+            >
                {about.buttons.aboutMe}
             </Button.Provider>
 
-            <Button.Provider className=" bg-secondary h-12 w-40 hover:opacity-90 text-color-text-main font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out">
-               {about.buttons.cv}
-            </Button.Provider>
+            <a className="inline-block" download="CV" href="./cv.pdf">
+               <Button.Provider className=" bg-secondary h-12 w-36 hover:opacity-90 text-color-text-main font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out">
+                  {about.buttons.cv}
+               </Button.Provider>
+            </a>
          </div>
       </div>
    );
