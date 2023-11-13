@@ -84,6 +84,11 @@
                         "MongoDB"
                     ],
                     "description": "Possuo habilidades avançadas em manipulação de dados no MongoDB, incluindo operações CRUD."
+                },
+                {
+                    "title": "Adicionais",
+                    "icons": [],
+                    "description": "Tenho noções de Estrutura de Dados, analíse de complexidades, também sei conceitos boas práticas de progamação e de SOLID e alguns designs patterns (Factory e Singleton)"
                 }
             ],
             "projects": [

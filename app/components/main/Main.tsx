@@ -10,7 +10,7 @@ export default function Main({}: IPropMain) {
       <BaseSection
          id={CSectionNames.main}
          style={{ backgroundImage: 'url("./images/main-image.jpg" ' }}
-         className="bg-cover bg-left flex w-full relative pt-header-height h-screen bg-gradient-to-r from-primary to-transparent"
+         className="bg-cover bg-left flex w-full relative pt-header-height h-screen"
       >
          <Presetation />
       </BaseSection>
