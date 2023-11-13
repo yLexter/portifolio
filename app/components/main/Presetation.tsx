@@ -4,8 +4,8 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import { Button } from "../UI/Button/Button";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
-import SocialIcon from "../UI/Socials/SocialIcon";
 import { CSectionNames, TSectionName } from "@/app/entities";
+import { SocialIcon } from "../UI/Socials/SocialIcon";
 
 type IPropPresetation = {
    className?: string;

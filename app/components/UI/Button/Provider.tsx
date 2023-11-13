@@ -9,7 +9,7 @@ export default function Provider({ className, ...props }: IPropProvider) {
    return (
       <button
          className={twMerge(
-            "p-4 flex justify-center items-center h-8 w-auto gap-x-1",
+            "p-4 flex justify-center items-center h-8 w-auto gap-x-1 shadow-lg",
             className
          )}
          {...props}

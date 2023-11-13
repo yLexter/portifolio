@@ -17,7 +17,7 @@ export default function BoxTimeline({
       <div
          className={twJoin(
             isEven ? "md:ml-auto" : "md:mr-auto",
-            "w-full md:w-[45%]",
+            "w-full md:w-[45%] shadow-lg",
             "max-[768px]:after:hidden",
             "p-4 rounded bg-[#24292d] w-full relative",
             "after:content-[''] after:w-4 after:h-4 after:rounded-full",

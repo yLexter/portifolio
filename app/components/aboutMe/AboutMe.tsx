@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Timeline from "../UI/Timeline/Timeline";
 import { CSectionNames, TDataTimeline } from "@/app/entities";
 import SectionTitle from "../UI/Texts/SectionTitle";
 import BaseSection from "../UI/Section/BaseSection";
