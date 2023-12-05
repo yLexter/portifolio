@@ -8,7 +8,7 @@ export type TJsonProvider = {
    data: TJsonData;
    currentData: TJsonLanguageData;
    language: TLanguages;
-   setLanguage: (language: TLanguages) => void;
+   setLanguage: React.Dispatch<React.SetStateAction<TLanguages>>;
 };
 
 const JsonContext = createContext({} as TJsonProvider);
@@ -20,15 +20,11 @@ export const JsonContextProvider = ({
 }) => {
    const [currentLanguage, setCurrentLanguage] = useState<TLanguages>("pt_BR");
 
-   const handleCurrentLanguage = (language: TLanguages) => {
-      setCurrentLanguage(language);
-   };
-
    return (
       <JsonContext.Provider
          value={{
             language: currentLanguage,
-            setLanguage: handleCurrentLanguage,
+            setLanguage: setCurrentLanguage,
             data: json as TJsonData,
             currentData: json["languages"][
                currentLanguage

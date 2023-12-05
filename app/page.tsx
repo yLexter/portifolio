@@ -8,7 +8,7 @@ import MyTimeLine from "./components/myTimeline/MyTimeLine";
 import Skills from "./components/skills/Skills";
 import ContextProvider from "@/contexts/ContextProvider";
 
-export default function Home() {
+export default function App() {
    return (
       <ContextProvider>
          <Header />

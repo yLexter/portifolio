@@ -20,7 +20,7 @@ export default function Skills({}: IPropSkill) {
 
          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {skills.map((skill) => (
-               <Skill key={`Skills-${skill}`} skill={skill} />
+               <Skill key={`Skills-${skill.description}`} skill={skill} />
             ))}
          </div>
       </BaseSection>

@@ -6,6 +6,7 @@ import { twJoin, twMerge } from "tailwind-merge";
 import useScrollPosition from "../hooks/useScrollPosition";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 import { CSectionNames, TSectionName } from "@/app/entities";
+import DropdownLanguage from "../UI/Dropdown/DropdownLanguage";
 
 type IPropHeader = {};
 
@@ -32,13 +33,19 @@ export default function Header({}: IPropHeader) {
             "flex justify-between items-center z-10 px-spacing-page"
          )}
       >
-         <h1
-            onClick={() => handleSection(CSectionNames.main)}
-            className="cursor-pointer text-2xl font-semibold w-1/2 text-color-text-main "
-         >
-            {data.name}
-         </h1>
-         <NavBar className="w-auto lg:w-1/2" />
+         <div className="flex-1">
+            <h1
+               onClick={() => handleSection(CSectionNames.main)}
+               className="cursor-pointer inline-block text-2xl font-semibold text-color-text-main "
+            >
+               {data.name}
+            </h1>
+         </div>
+
+         <div className="flex flex-[2] gap-x-10 items-center flex-row-reverse justify-around lg:flex-row lg:justify-between">
+            <NavBar className="lg:w-[90%]" />
+            <DropdownLanguage />
+         </div>
       </header>
    );
 }

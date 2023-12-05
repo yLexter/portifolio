@@ -9,3 +9,16 @@
 .title-responsive {
    @apply text-xl md:text-2xl lg:text-[1.65rem] lg:leading-[2rem];
 }
+
+::-webkit-scrollbar {
+   width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #8a3ab9;
+   border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+   background-color: #1a1a1a;
+}

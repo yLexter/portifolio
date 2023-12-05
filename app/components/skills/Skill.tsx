@@ -15,7 +15,9 @@ export default function Skill({
          <div className="flex gap-x-2 mb-2">
             {icons.map((icon) => (
                <CustomIcon
-                  key={`Skill-${title}-${icon}`}
+                  key={`Skill-${title}-${description}-${~~(
+                     Math.random() * 1000
+                  )}`}
                   hasColor
                   icon={icon}
                />

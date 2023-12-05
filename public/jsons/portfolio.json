@@ -7,6 +7,13 @@
     },
     "languages": {
         "pt_BR": {
+            "naveBar": {
+                "home": "Início",
+                "aboutMe": "Sobre Mim",
+                "skills": "Skills",
+                "timeline": "Timeline",
+                "projects": "Projetos"
+            },
             "sectionTitle": {
                 "aboutMe": "Sobre Mim",
                 "skills": "Habilidades",
@@ -129,6 +136,144 @@
                     "liveDemo": "https://wikidarius.vercel.app/",
                     "image": "https://i.pinimg.com/originals/6f/93/50/6f93508f78319faf2a9929632b3fc041.jpg",
                     "description": "WikiDarius é uma plataforma online dedicada a criar uma comunidade de jogadores apaixonados de League of Legends (LoL), com um foco especial no campeão Darius.",
+                    "languages": [
+                        "TypeScript",
+                        "MongoDB",
+                        "NextJs"
+                    ]
+                }
+            ]
+        },
+        "en_US": {
+            "naveBar": {
+                "home": "Home",
+                "aboutMe": "About Me",
+                "skills": "Skills",
+                "timeline": "Timeline",
+                "projects": "Projects"
+            },
+            "sectionTitle": {
+                "aboutMe": "About Me",
+                "skills": "Skills",
+                "timeline": "Timeline",
+                "projects": "Projects"
+            },
+            "about": {
+                "presetation": "Hello, I am",
+                "profession": {
+                    "presetation": "I am a",
+                    "profession": "Web Developer"
+                },
+                "resume": "I am a technology enthusiast and passionate about turning lines of code into amazing things. Since the moment I discovered the wonderful universe of programming, I have immersed myself in projects and challenges.",
+                "aboutMe": "My name is Lucas Ferreira Maia, I am 20 years old, living in Campina Grande - PB. Since childhood, I have had a passion for mathematics and technologies, which led me to pursue a degree in computer science at the State University of Paraíba (UEPB). Currently, I am seeking my first position as a developer.",
+                "buttons": {
+                    "cv": "My CV",
+                    "aboutMe": "About Me"
+                }
+            },
+            "timeline": [
+                {
+                    "title": "First contact with programming",
+                    "date": "05/06/2021",
+                    "text": "Started studying JavaScript and creating bots for Discord as a hobby."
+                },
+                {
+                    "title": "Computer Science Course",
+                    "date": "23/04/2022",
+                    "text": "Enrolled in the computer science course at UEPB."
+                },
+                {
+                    "title": "Web Development Area",
+                    "date": "15/01/2023",
+                    "text": "Discovered and started studying web programming."
+                }
+            ],
+            "skills": [
+                {
+                    "title": "HTML, CSS & JavaScript",
+                    "icons": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    ],
+                    "description": "I have extensive knowledge of HTML and CSS for creating attractive and responsive interfaces. In JavaScript, I have advanced skills, including mastery of advanced topics such as Promises, async/await, and efficient event handling."
+                },
+                {
+                    "title": "Next JS & Typescript",
+                    "icons": [
+                        "NextJs",
+                        "TypeScript"
+                    ],
+                    "description": "I develop modern and efficient web applications using NextJS and Typescript. I have advanced experience with Typescript and intermediate experience with NextJS."
+                },
+                {
+                    "title": "Python, Java & C",
+                    "icons": [
+                        "Python",
+                        "Java",
+                        "C"
+                    ],
+                    "description": "In Python, I master the syntax and have experience with libraries such as Pandas and Matplotlib for data manipulation and visualization. In Java, I have complete knowledge of object-oriented programming. In C, I am familiar with syntax and basic concepts, with an emphasis on file manipulation."
+                },
+                {
+                    "title": "Git & Github",
+                    "icons": [
+                        "Git",
+                        "Github"
+                    ],
+                    "description": "I am proficient in using Git, performing operations such as pull requests and branch management. I have experience hosting repositories on Github and understand the fundamental concepts of version control."
+                },
+                {
+                    "title": "Mongo DB",
+                    "icons": [
+                        "MongoDB"
+                    ],
+                    "description": "I have advanced skills in data manipulation in MongoDB, including CRUD operations."
+                },
+                {
+                    "title": "Additional",
+                    "icons": [],
+                    "description": "I have knowledge of Data Structures, complexity analysis, as well as good programming practices and understanding of SOLID principles and some design patterns (Factory and Singleton)."
+                }
+            ],
+            "projects": [
+                {
+                    "name": "Projects/Exercises",
+                    "github": "https://github.com/yLexter/Exercicios",
+                    "image": "https://istack.iium.edu.my/uploads/images/gallery/2021-04/scaled-1680-/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg",
+                    "description": "All my exercises and projects done throughout the computer science course at UEPB.",
+                    "languages": [
+                        "Python",
+                        "Java",
+                        "C"
+                    ]
+                },
+                {
+                    "name": "Discord Bot",
+                    "github": "https://github.com/yLexter/botyLexter",
+                    "image": "https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/KQtkEi6WmzvGz7ACPAghma/download/",
+                    "description": "This multifunctional bot allows music playback in Discord voice channels, offers administration features to maintain order in servers, and includes mini-games for additional fun.",
+                    "languages": [
+                        "NodeJs",
+                        "MongoDB"
+                    ]
+                },
+                {
+                    "name": "ToDo List (Under Construction)",
+                    "github": "https://github.com/yLexter/ToDoList",
+                    "image": "https://t3.ftcdn.net/jpg/01/10/01/90/240_F_110019055_JBbr778hMxpwuwDaFszyQNck5PhBYHli.jpg",
+                    "description": "This project is a web application for task list management, designed to help users track their daily tasks efficiently and organized. The application allows users to create, edit, delete, and mark tasks as completed.",
+                    "languages": [
+                        "TypeScript",
+                        "MongoDB",
+                        "NextJs"
+                    ]
+                },
+                {
+                    "name": "WikiDarius (Under Construction)",
+                    "liveDemo": "https://wikidarius.vercel.app/",
+                    "image": "https://i.pinimg.com/originals/6f/93/50/6f93508f78319faf2a9929632b3fc041.jpg",
+                    "description": "WikiDarius is an online platform dedicated to creating a community of passionate League of Legends (LoL) players, with a special focus on the champion Darius.",
                     "languages": [
                         "TypeScript",
                         "MongoDB",

@@ -41,9 +41,17 @@ export type TDataTimeline = {
    text: string;
 };
 
-export type TLanguages = "pt_BR";
+export type TLanguages = "pt_BR" | "en_US";
 
 export type TJsonLanguageData = {
+   naveBar: {
+      home: string;
+      aboutMe: string;
+      skills: string;
+      timeline: string;
+      projects: string;
+   };
+
    sectionTitle: {
       aboutMe: string;
       skills: string;
