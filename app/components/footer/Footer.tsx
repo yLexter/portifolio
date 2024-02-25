@@ -20,7 +20,7 @@ export default function Footer({}: IPropFooter) {
    };
 
    return (
-      <footer className="flex relative justify-center items-center absloute bottom-0 bg-primary h-32 w-full px-spacing-page ">
+      <footer className="flex relative justify-center items-center absloute bottom-0 h-32 w-full px-spacing-page ">
          <div className="flex flex-col">
             <div className="flex justify-center items-center gap-x-4 mb-4">
                <SocialIcons.Github />
