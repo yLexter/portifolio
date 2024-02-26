@@ -1,4 +1,4 @@
-import { CSectionNames } from ".";
+import { CLanguages, CSectionNames } from ".";
 
 export type TRandomIcon =
    | "JavaScript"
@@ -41,7 +41,7 @@ export type TDataTimeline = {
    text: string;
 };
 
-export type TLanguages = "pt_BR" | "en_US";
+export type TLanguages = keyof typeof CLanguages;
 
 export type TJsonLanguageData = {
    naveBar: {

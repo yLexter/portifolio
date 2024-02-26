@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "../ui/Texts/SectionTitle";
+import SectionTitle from "../ui/Section/SectionTitle";
 import { TSkill } from "@/entities";
 import CustomIcon from "../ui/SocialsIcons/CustomIcon";
 

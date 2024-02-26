@@ -8,9 +8,21 @@ export const CSectionNames = {
    projects: "projects",
 } as const;
 
-export const CLanguages = {
-   pt: "pt_BR",
-   en: "en_US",
+export const CLanguages: Record<
+   string,
+   {
+      code: string;
+      label: string;
+   }
+> = {
+   pt_BR: {
+      code: "pt_BR",
+      label: "Português Brasileiro",
+   },
+   en_US: {
+      code: "en_US",
+      label: "English",
+   },
 };
 
 export const TRandomIconColors: Record<TRandomIcon, string> = {

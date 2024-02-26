@@ -4,7 +4,7 @@ import { CSectionNames, TProject } from "@/entities";
 import React from "react";
 import Project from "./Project";
 import useFetch from "../hooks/useFetch";
-import SectionTitle from "../ui/Texts/SectionTitle";
+import SectionTitle from "../ui/Section/SectionTitle";
 import BaseSection from "../ui/Section/BaseSection";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 

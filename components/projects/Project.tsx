@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import { AiFillGithub } from "react-icons/ai";
 import { MdOpenInNew } from "react-icons/md";
 import { twMerge } from "tailwind-merge";
+import ModalProjectImage from "../modals/ModalProjectImage";
 
 type IProject = {
    project: TProject;
@@ -73,23 +74,17 @@ const ProjectInformation = ({
    );
 };
 
-const ProjectImage = ({
-   project: { name, github, liveDemo, image, languages },
-}: IProject) => {
-   const urlRepository = liveDemo || github;
-
+const ProjectImage = ({ project }: IProject) => {
    return (
-      <div className="hidden items-start justify-center md:w-1/2 md:flex">
-         <figure className="shadow-lg hover:scale-105">
-            <a href={urlRepository} target="_blank">
-               <img
-                  className="w-full h-auto rounded-lg object-cover"
-                  src={image}
-                  alt={`Projeto: ${name}`}
-               />
-            </a>
-         </figure>
-      </div>
+      <ModalProjectImage project={project}>
+         <div className="hidden flex-1 items-start justify-center md:w-1/2 md:flex hover:scale-105">
+            <img
+               className="w-full h-auto rounded-lg object-cover shadow-lg"
+               src={project.image}
+               alt={`Projeto: ${project.name}`}
+            />
+         </div>
+      </ModalProjectImage>
    );
 };
 

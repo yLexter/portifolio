@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SectionTitle from "../ui/Texts/SectionTitle";
+import SectionTitle from "../ui/Section/SectionTitle";
 import Skill from "./Skill";
 import BaseSection from "../ui/Section/BaseSection";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
