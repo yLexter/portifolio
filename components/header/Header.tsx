@@ -6,7 +6,6 @@ import { twJoin, twMerge } from "tailwind-merge";
 import useScrollPosition from "../hooks/useScrollPosition";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 import { CSectionNames, TSectionName } from "@/entities";
-import DropdownLanguage from "../ui/Dropdown/DropdownLanguage";
 
 type IPropHeader = {};
 
@@ -44,7 +43,6 @@ export default function Header({}: IPropHeader) {
 
          <div className="flex flex-[2] gap-x-10 items-center flex-row-reverse justify-around lg:flex-row lg:justify-between">
             <NavBar className="lg:w-[90%]" />
-            <DropdownLanguage />
          </div>
       </header>
    );

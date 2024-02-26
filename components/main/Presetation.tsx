@@ -2,7 +2,7 @@
 
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import { Button } from "../ui/Button/Button";
+import { Button } from "../ui/button";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 import { CSectionNames, TSectionName } from "@/entities";
 import { SocialIcon } from "../ui/SocialsIcons/SocialIcon";
@@ -32,7 +32,7 @@ export default function Presetation({ className }: IPropPresetation) {
    return (
       <div
          className={twMerge(
-            "w-full md:w-9/12 lg:w-8/12 flex min-h-[400px] justify-center flex-col gap-y-3",
+            "relative w-full md:w-9/12 lg:w-8/12 flex min-h-[400px] justify-center flex-col gap-y-3",
             className
          )}
       >
@@ -63,17 +63,17 @@ export default function Presetation({ className }: IPropPresetation) {
          </div>
 
          <div className="flex gap-x-4">
-            <Button.Provider
+            <Button
                onClick={() => handleSection(CSectionNames.aboutMe)}
-               className=" bg-primary h-12 w-36 hover:opacity-90  font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out"
+               className="h-12 w-36 rounded-lg"
             >
                {about.buttons.aboutMe}
-            </Button.Provider>
+            </Button>
 
             <a className="inline-block" download="CV" href="./cv.pdf">
-               <Button.Provider className=" bg-primary h-12 w-36 hover:opacity-90  font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out">
+               <Button variant={"secondary"} className="h-12 w-36 rounded-lg">
                   {about.buttons.cv}
-               </Button.Provider>
+               </Button>
             </a>
          </div>
       </div>

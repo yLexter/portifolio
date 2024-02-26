@@ -5,6 +5,7 @@ import { twMerge } from "tailwind-merge";
 import { SocialIcon } from "../ui/SocialsIcons/SocialIcon";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
+import { Button } from "../ui/button";
 
 type IPropFooter = {};
 
@@ -33,15 +34,12 @@ export default function Footer({}: IPropFooter) {
             </span>
          </div>
 
-         <button
+         <Button
             onClick={handleClick}
-            className={twMerge(
-               "ease-in-out duration-1000 absolute right-[5%] top-[-10%] w-14 h-14",
-               "bg-secondary rounded-lg shadow-lg flex justify-center items-center"
-            )}
+            className="absolute right-[5%] top-[-10%] w-14 h-14"
          >
             <AiOutlineArrowUp color="white" size={30} />
-         </button>
+         </Button>
       </footer>
    );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useJsonDataContext } from "@/contexts/JsonProvider";
-import CustomIcon from "../Icon/CustomIcon";
+import CustomIcon from "./CustomIcon";
 import IconWithLink from "./IconWithLink";
 
 export function SocialIcon() {

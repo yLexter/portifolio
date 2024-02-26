@@ -30,7 +30,8 @@ export default function ListNaveBar({
 
    const classLi = twMerge(
       "relative  font-light text-xl cursor-pointer active:text-secondary",
-      "after:absolute after:content-[''] after:w-[0px] after:h-[2px] after:bg-secondary after:bottom-[-5px] after:left-0 after:duration-300",
+      "after:absolute after:content-[''] after:w-[0px] after:h-[2px]",
+      "after:bg-primary after:bottom-[-5px] after:left-0 after:duration-300",
       "after:ease-in-out after:mb-1 hover:after:w-full",
       classNameLi
    );

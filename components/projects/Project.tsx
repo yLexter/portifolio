@@ -1,8 +1,7 @@
 import { TProject } from "@/entities";
 import React from "react";
-import CustomIcon from "../ui/Icon/CustomIcon";
-import { Button } from "../ui/Button/Button";
-
+import CustomIcon from "../ui/SocialsIcons/CustomIcon";
+import { Button } from "../ui/button";
 import { AiFillGithub } from "react-icons/ai";
 import { MdOpenInNew } from "react-icons/md";
 import { twMerge } from "tailwind-merge";
@@ -29,9 +28,9 @@ const ProjectInformation = ({
    project: { name, github, liveDemo, description, languages },
 }: IProject) => {
    return (
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 p-4">
          <div className="mb-4">
-            <h1 className="text-center font-semibold mb-4 title-responsive ">
+            <h1 className="text-center text-lg font-semibold mb-4 title-responsive ">
                {name}
             </h1>
             <p className="text-card-foreground text-center paragraph-responsive">
@@ -52,22 +51,22 @@ const ProjectInformation = ({
 
          <div className="flex gap-x-4 justify-center">
             <a className="inline-block" target="_blank" href={github}>
-               <Button.Provider
+               <Button
                   disabled={!!!github}
                   className={getClassNameButton(github)}
                >
-                  <Button.Icon color="white" Icon={AiFillGithub} />
+                  <AiFillGithub />
                   GitHub
-               </Button.Provider>
+               </Button>
             </a>
             <a className="inline-block" target="_blank" href={liveDemo}>
-               <Button.Provider
+               <Button
                   disabled={!!!liveDemo}
                   className={getClassNameButton(liveDemo)}
                >
                   Demo
-                  <Button.Icon color="white" Icon={MdOpenInNew} />
-               </Button.Provider>
+                  <MdOpenInNew />
+               </Button>
             </a>
          </div>
       </div>
@@ -75,7 +74,7 @@ const ProjectInformation = ({
 };
 
 const ProjectImage = ({
-   project: { name, github, liveDemo, image, description, languages },
+   project: { name, github, liveDemo, image, languages },
 }: IProject) => {
    const urlRepository = liveDemo || github;
 
@@ -84,7 +83,7 @@ const ProjectImage = ({
          <figure className="shadow-lg hover:scale-105">
             <a href={urlRepository} target="_blank">
                <img
-                  className="w-full h-[350px] rounded-lg"
+                  className="w-full h-auto rounded-lg object-cover"
                   src={image}
                   alt={`Projeto: ${name}`}
                />
@@ -96,7 +95,7 @@ const ProjectImage = ({
 
 export default function Project({ project, index }: IPropProject) {
    return (
-      <article className="bg-card flex mb-16 md:gap-x-16">
+      <article className="flex mb-16 md:gap-x-16">
          {index % 2 == 0 && (
             <>
                <ProjectInformation project={project} />

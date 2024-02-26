@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "../ui/Texts/SectionTitle";
 import { TSkill } from "@/entities";
-import CustomIcon from "../ui/Icon/CustomIcon";
+import CustomIcon from "../ui/SocialsIcons/CustomIcon";
 
 type IPropSkill = {
    skill: TSkill;
@@ -11,7 +11,7 @@ export default function Skill({
    skill: { icons, title, description },
 }: IPropSkill) {
    return (
-      <article className="bg-[#24292d] h-auto rounded-lg shadow-lg p-4">
+      <article className="bg-card h-auto rounded-lg shadow-lg p-4">
          <div className="flex gap-x-2 mb-2">
             {icons.map((icon) => (
                <CustomIcon
@@ -24,10 +24,12 @@ export default function Skill({
             ))}
          </div>
 
-         <h3 className="font-semibold text-xl  mb-2 title-responsive">
+         <h3 className="font-semibold text-xl mb-2 title-responsive">
             {title}
          </h3>
-         <p className="text-muted paragraph-responsive">{description}</p>
+         <p className="text-muted-foreground paragraph-responsive">
+            {description}
+         </p>
       </article>
    );
 }

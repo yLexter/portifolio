@@ -4,7 +4,7 @@ import Main from "../components/main/Main";
 import Projects from "../components/projects/Projects";
 import AboutMe from "../components/about-me/AboutMe";
 import Footer from "../components/footer/Footer";
-import MyTimeLine from "../components/timeline/MyTimeLine";
+import Timeline from "../components/timeline/Timeline";
 import Skills from "../components/skills/Skills";
 import ContextProvider from "@/contexts/ContextProvider";
 
@@ -15,7 +15,7 @@ export default function App() {
          <Main />
          <AboutMe />
          <Skills />
-         <MyTimeLine />
+         <Timeline />
          <Projects />
          <Footer />
       </ContextProvider>
