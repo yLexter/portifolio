@@ -1,7 +1,7 @@
 import React from "react";
 import Presetation from "./Presetation";
-import BaseSection from "../UI/Section/BaseSection";
-import { CSectionNames } from "@/app/entities";
+import BaseSection from "../ui/Section/BaseSection";
+import { CSectionNames } from "@/entities";
 
 type IPropMain = {};
 

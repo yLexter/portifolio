@@ -1,6 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
+import { cn } from "../lib/utils";
+
+export const fontSans = FontSans({
+   subsets: ["latin"],
+   variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
    title: "Lucas Portifólio",
@@ -42,7 +49,7 @@ export const metadata: Metadata = {
       "Git",
       "Controle de Versão",
       "Responsive Design",
-      "UX/UI",
+      "UX/ui",
       "Web Design",
       "Desempenho Web",
       "Version Control",
@@ -67,7 +74,14 @@ export default function RootLayout({
 }) {
    return (
       <html lang="en">
-         <body>{children}</body>
+         <body
+            className={cn(
+               "min-h-screen bg-background font-sans antialiased",
+               fontSans.variable
+            )}
+         >
+            {children}
+         </body>
       </html>
    );
 }

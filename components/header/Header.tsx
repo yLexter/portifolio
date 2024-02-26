@@ -5,8 +5,8 @@ import NavBar from "./NavBar";
 import { twJoin, twMerge } from "tailwind-merge";
 import useScrollPosition from "../hooks/useScrollPosition";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
-import { CSectionNames, TSectionName } from "@/app/entities";
-import DropdownLanguage from "../UI/Dropdown/DropdownLanguage";
+import { CSectionNames, TSectionName } from "@/entities";
+import DropdownLanguage from "../ui/Dropdown/DropdownLanguage";
 
 type IPropHeader = {};
 
@@ -36,7 +36,7 @@ export default function Header({}: IPropHeader) {
          <div className="flex-1">
             <h1
                onClick={() => handleSection(CSectionNames.main)}
-               className="cursor-pointer inline-block text-2xl font-semibold text-color-text-main "
+               className="cursor-pointer inline-block text-2xl font-semibold  "
             >
                {data.name}
             </h1>

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
-import { TLanguages } from "@/app/entities";
+import { TLanguages } from "@/entities";
 import { IconType } from "react-icons";
 import { GiBrazilFlag } from "react-icons/gi";
 import { LiaFlagUsaSolid } from "react-icons/lia";
@@ -49,7 +49,7 @@ const OptionDropdown = ({
          {...props}
       >
          <Icon color="white" size={24} />{" "}
-         <span className="font-bold text-color-text-main">{label}</span>
+         <span className="font-bold ">{label}</span>
       </li>
    );
 };

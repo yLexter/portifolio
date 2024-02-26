@@ -1,4 +1,4 @@
-import { TRandomIconColors, TRandomIcon } from "@/app/entities";
+import { TRandomIconColors, TRandomIcon } from "@/entities";
 import React from "react";
 
 import { TbLetterC } from "react-icons/tb";

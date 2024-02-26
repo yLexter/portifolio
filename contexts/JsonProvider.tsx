@@ -1,6 +1,6 @@
 "use client";
 
-import { TJsonData, TJsonLanguageData, TLanguages } from "@/app/entities";
+import { TJsonData, TJsonLanguageData, TLanguages } from "@/entities";
 import React, { useContext, useEffect, useState, createContext } from "react";
 import json from "../public/jsons/portfolio.json";
 

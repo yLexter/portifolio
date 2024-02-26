@@ -1,11 +1,11 @@
 "use client";
 
-import { CSectionNames, TProject } from "@/app/entities";
+import { CSectionNames, TProject } from "@/entities";
 import React from "react";
 import Project from "./Project";
 import useFetch from "../hooks/useFetch";
-import SectionTitle from "../UI/Texts/SectionTitle";
-import BaseSection from "../UI/Section/BaseSection";
+import SectionTitle from "../ui/Texts/SectionTitle";
+import BaseSection from "../ui/Section/BaseSection";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 
 type IPropProjects = {};

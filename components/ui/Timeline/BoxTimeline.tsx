@@ -1,4 +1,4 @@
-import { TDataTimeline } from "@/app/entities";
+import { TDataTimeline } from "@/entities";
 import React from "react";
 import { twJoin } from "tailwind-merge";
 
@@ -31,9 +31,7 @@ export default function BoxTimeline({
          )}
       >
          <div className="flex flex-col gap-y-1">
-            <h2 className="font-semibold text-color-text-main title-responsive ">
-               {title}
-            </h2>
+            <h2 className="font-semibold  title-responsive ">{title}</h2>
             <span className="italic text-xs text-color-text-secondary font-400 paragraph-responsive">
                {date}
             </span>

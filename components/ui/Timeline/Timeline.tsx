@@ -1,4 +1,4 @@
-import { TDataTimeline } from "@/app/entities";
+import { TDataTimeline } from "@/entities";
 import React from "react";
 import BoxTimeline from "./BoxTimeline";
 import { twMerge } from "tailwind-merge";

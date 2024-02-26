@@ -1,6 +1,6 @@
 "use client";
 
-import { CSectionNames, TSectionName } from "@/app/entities";
+import { CSectionNames, TSectionName } from "@/entities";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 import React from "react";
 import { twMerge } from "tailwind-merge";
@@ -29,7 +29,7 @@ export default function ListNaveBar({
    } = useJsonDataContext();
 
    const classLi = twMerge(
-      "relative text-color-text-main font-light text-xl cursor-pointer active:text-secondary",
+      "relative  font-light text-xl cursor-pointer active:text-secondary",
       "after:absolute after:content-[''] after:w-[0px] after:h-[2px] after:bg-secondary after:bottom-[-5px] after:left-0 after:duration-300",
       "after:ease-in-out after:mb-1 hover:after:w-full",
       classNameLi

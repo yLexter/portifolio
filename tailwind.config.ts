@@ -83,7 +83,7 @@ const config: Config = {
          },
 
          padding: {
-            "spacing-page": "15%",
+            "spacing-page": "10%",
             "header-height": "96px",
          },
 

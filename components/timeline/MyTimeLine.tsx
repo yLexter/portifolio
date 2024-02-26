@@ -1,15 +1,15 @@
 "use client";
 
 import React from "react";
-import Timeline from "../UI/Timeline/Timeline";
+import Timeline from "../ui/Timeline/Timeline";
 import { CSectionNames, TDataTimeline } from "../../entities";
-import SectionTitle from "../UI/Texts/SectionTitle";
-import BaseSection from "../UI/Section/BaseSection";
+import SectionTitle from "../ui/Texts/SectionTitle";
+import BaseSection from "../ui/Section/BaseSection";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 
-type IProp = {};
+type IPropContainerTimeLine = {};
 
-export default function ({}: IProp) {
+export default function ContainerTimeLine({}: IPropContainerTimeLine) {
    const {
       currentData: { sectionTitle, timeline },
    } = useJsonDataContext();

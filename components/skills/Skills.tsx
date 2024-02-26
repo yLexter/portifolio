@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import SectionTitle from "../UI/Texts/SectionTitle";
+import SectionTitle from "../ui/Texts/SectionTitle";
 import Skill from "./Skill";
-import BaseSection from "../UI/Section/BaseSection";
+import BaseSection from "../ui/Section/BaseSection";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
-import { CSectionNames } from "@/app/entities";
+import { CSectionNames } from "@/entities";
 
 type IPropSkill = {};
 

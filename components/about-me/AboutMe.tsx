@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { CSectionNames, TDataTimeline } from "@/app/entities";
-import SectionTitle from "../UI/Texts/SectionTitle";
-import BaseSection from "../UI/Section/BaseSection";
+import { CSectionNames, TDataTimeline } from "@/entities";
+import SectionTitle from "../ui/Texts/SectionTitle";
+import BaseSection from "../ui/Section/BaseSection";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 
 type IPropAboutMe = {};

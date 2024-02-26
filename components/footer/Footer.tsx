@@ -2,7 +2,7 @@
 
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import { SocialIcon } from "../UI/SocialsIcons/SocialIcon";
+import { SocialIcon } from "../ui/SocialsIcons/SocialIcon";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { useJsonDataContext } from "@/contexts/JsonProvider";
 
@@ -28,7 +28,7 @@ export default function Footer({}: IPropFooter) {
                <SocialIcons.Twitter />
             </div>
 
-            <span className="text-color-text-main text-center paragraph-responsive">
+            <span className=" text-center paragraph-responsive">
                © 2023 - {data.name}.
             </span>
          </div>

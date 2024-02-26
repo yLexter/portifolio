@@ -1,7 +1,7 @@
 import React from "react";
-import SectionTitle from "../UI/Texts/SectionTitle";
-import { TSkill } from "@/app/entities";
-import CustomIcon from "../UI/Icon/CustomIcon";
+import SectionTitle from "../ui/Texts/SectionTitle";
+import { TSkill } from "@/entities";
+import CustomIcon from "../ui/Icon/CustomIcon";
 
 type IPropSkill = {
    skill: TSkill;
@@ -24,12 +24,10 @@ export default function Skill({
             ))}
          </div>
 
-         <h3 className="font-semibold text-xl text-color-text-main mb-2 title-responsive">
+         <h3 className="font-semibold text-xl  mb-2 title-responsive">
             {title}
          </h3>
-         <p className="text-color-text-secondary paragraph-responsive">
-            {description}
-         </p>
+         <p className="text-muted paragraph-responsive">{description}</p>
       </article>
    );
 }
