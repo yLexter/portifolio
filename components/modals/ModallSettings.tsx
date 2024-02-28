@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import {
    Dialog,
    DialogContent,
@@ -8,10 +10,11 @@ import {
    DialogTrigger,
    DialogFooter,
 } from "@/components/ui/dialog";
-import { CLanguages } from "@/entities";
+import { CLanguages, TLanguages } from "@/entities";
 import { Checkbox } from "../ui/checkbox";
 import { Button } from "../ui/button";
-import { RadioGroup } from "../ui/radio-group";
+import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
+import { useJsonDataContext } from "@/contexts/JsonProvider";
 
 type IPropModallSettings = {
    children: React.ReactNode;
@@ -19,10 +22,16 @@ type IPropModallSettings = {
 
 export default function ModallSettings({ children }: IPropModallSettings) {
    const languages = Object.values(CLanguages);
+   const { language, setLanguage } = useJsonDataContext();
+   const [selectedValue, setSelectedValue] = useState<TLanguages>(language);
 
-   const handleClick = (
-      e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-   ) => {};
+   const handleRadioChange = (value: string) => {
+      setSelectedValue(value as TLanguages);
+   };
+
+   const handleClick = () => {
+      setLanguage(selectedValue);
+   };
 
    return (
       <Dialog>
@@ -35,25 +44,33 @@ export default function ModallSettings({ children }: IPropModallSettings) {
             <div>
                <h1 className="font-semibold mb-1">Linguagens</h1>
 
-               <ul>
+               <RadioGroup
+                  onValueChange={handleRadioChange}
+                  defaultValue={language}
+               >
                   {languages.map((language) => {
                      return (
-                        <li className="flex items-center space-x-2">
-                           <RadioGroup
+                        <div
+                           key={`RadioGpStts-${language.code}`}
+                           className="flex items-center space-x-2"
+                        >
+                           <RadioGroupItem
                               value={language.code}
                               id={`MdSttngs-${language.code}`}
                            />
                            <label htmlFor={`MdSttngs-${language.code}`}>
                               {language.label}
                            </label>
-                        </li>
+                        </div>
                      );
                   })}
-               </ul>
+               </RadioGroup>
             </div>
 
             <DialogFooter>
-               <Button onClick={handleClick}>Salvar</Button>
+               <DialogTrigger asChild>
+                  <Button onClick={handleClick}>Salvar</Button>
+               </DialogTrigger>
             </DialogFooter>
          </DialogContent>
       </Dialog>

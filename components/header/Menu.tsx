@@ -38,7 +38,7 @@ export default function HamburguerMenu({
          />
 
          {isOpen && (
-            <div className="absolute top-header-height left-0 h-screen w-screen p-4 bg-primary">
+            <div className="absolute top-header-height left-0 h-screen w-screen p-4 bg-background">
                <ListNaveBar
                   classNameLi="mb-4 text-[2.5rem] font-semibold"
                   className="flex flex-col justify-between items-center"

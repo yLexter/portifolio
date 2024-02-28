@@ -17,7 +17,8 @@ type IPropProject = {
 
 const getClassNameButton = (state: string | undefined) => {
    return twMerge(
-      `bg-inherit  duration-300 border-secondary solid border-2 font-semibold p-4 flex rounded-lg`,
+      `flex items-center bg-inherit duration-300 border-secondary solid border-2`,
+      "font-semibold p-4 rounded-lg",
       "md:text-sm md:flex-1 md:gap-x-2",
       "lg:w-36 lg:h-12 lg:text-xl",
       `${!!state ? "hover:bg-secondary hover:" : ""} `,
@@ -31,7 +32,7 @@ const ProjectInformation = ({
    return (
       <div className="w-full md:w-1/2 p-4">
          <div className="mb-4">
-            <h1 className="text-center text-lg font-semibold mb-4 title-responsive ">
+            <h1 className="text-center text-xl font-semibold mb-4 title-responsive ">
                {name}
             </h1>
             <p className="text-card-foreground text-center paragraph-responsive">
@@ -76,15 +77,13 @@ const ProjectInformation = ({
 
 const ProjectImage = ({ project }: IProject) => {
    return (
-      <ModalProjectImage project={project}>
-         <div className="hidden flex-1 items-start justify-center md:w-1/2 md:flex hover:scale-105">
-            <img
-               className="w-full h-auto rounded-lg object-cover shadow-lg"
-               src={project.image}
-               alt={`Projeto: ${project.name}`}
-            />
-         </div>
-      </ModalProjectImage>
+      <div className="hidden flex-1 items-start justify-center md:w-1/2 md:flex hover:scale-105">
+         <img
+            className="w-full h-auto rounded-lg object-cover shadow-lg"
+            src={project.image}
+            alt={`Projeto: ${project.name}`}
+         />
+      </div>
    );
 };
 

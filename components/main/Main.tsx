@@ -12,10 +12,7 @@ export default function Main({}: IPropMain) {
          id={CSectionNames.main}
          style={{ backgroundImage: 'url("./images/main-image.jpg" ' }}
          className={twMerge(
-            "bg-cover bg-left flex w-full relative pt-header-height h-screen",
-            "after:content-[''] after:left-0 after:absolute after:bottom-0",
-            "after:w-full after:h-5 bg-[#040710]",
-            "after:bg-gradient-to-b after:from-[#040710] after:to-background"
+            "bg-cover bg-left flex w-full relative pt-header-height h-screen"
          )}
       >
          <Presetation />

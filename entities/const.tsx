@@ -8,13 +8,7 @@ export const CSectionNames = {
    projects: "projects",
 } as const;
 
-export const CLanguages: Record<
-   string,
-   {
-      code: string;
-      label: string;
-   }
-> = {
+export const CLanguages = {
    pt_BR: {
       code: "pt_BR",
       label: "Português Brasileiro",

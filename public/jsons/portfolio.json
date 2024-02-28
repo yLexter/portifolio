@@ -26,7 +26,7 @@
                     "presetation": "Eu sou um",
                     "profession": "Desenvolvedor Web"
                 },
-                "resume": "Sou um entusiasta da tecnologia e um apaixonado por transformar linhas de código em coisas incríveis. Desde o momento em que descobri o maravilhoso universo da programação, tenho mergulhado de cabeça em projetos e desafios.",
+                "resume": "Sou um entusiasta da tecnologia e desde o momento em que descobri o maravilhoso universo da programação, tenho mergulhado de cabeça em projetos e desafios.",
                 "aboutMe": "Me chamo Lucas Ferreira Maia, tenho 20 anos, moro em Campina Grande - PB e desde criança sempre tive uma paixão por matemática e tecnologias que me fez entrar no curso computação na Universidade Estadual da Paraíba (UEPB). Atualmente estou na procura da minha primeira vaga como desenvolvedor.",
                 "buttons": {
                     "cv": "Meu CV",
@@ -90,12 +90,7 @@
                     "icons": [
                         "MongoDB"
                     ],
-                    "description": "Possuo habilidades avançadas em manipulação de dados no MongoDB, incluindo operações CRUD."
-                },
-                {
-                    "title": "Adicionais",
-                    "icons": [],
-                    "description": "Tenho noções de Estrutura de Dados, analíse de complexidades, também sei conceitos boas práticas de progamação e de SOLID e alguns designs patterns (Factory e Singleton)"
+                    "description": "Possuo habilidades em manipulação de dados no MongoDB, incluindo operações CRUD."
                 }
             ],
             "projects": [
@@ -239,11 +234,6 @@
                         "MongoDB"
                     ],
                     "description": "I have advanced skills in data manipulation in MongoDB, including CRUD operations."
-                },
-                {
-                    "title": "Additional",
-                    "icons": [],
-                    "description": "I have knowledge of Data Structures, complexity analysis, as well as good programming practices and understanding of SOLID principles and some design patterns (Factory and Singleton)."
                 }
             ],
             "projects": [

@@ -31,7 +31,7 @@ export default function Header({}: IPropHeader) {
             `${scrollPosition > 0 ? "bg-[#070916]" : "bg-transparent"}`,
             "transtion duration-300 ease-in-out",
             "fixed top-0 left-0 w-full h-header-height",
-            "flex justify-between items-center z-10 px-spacing-page"
+            "flex justify-between items-center z-[99999] px-spacing-page"
          )}
       >
          <div className="flex-1">
@@ -43,7 +43,7 @@ export default function Header({}: IPropHeader) {
             </h1>
          </div>
 
-         <div className="flex flex-[2] gap-x-10 items-center flex-row-reverse justify-around lg:flex-row lg:justify-between">
+         <div className="flex flex-[2] sm:flex-1 gap-x-10 items-center flex-row-reverse justify-around lg:flex-row lg:justify-between">
             <NavBar className="lg:w-[90%]" />
          </div>
 
