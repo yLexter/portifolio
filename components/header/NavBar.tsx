@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import ListNaveBar from "./ListNaveBar";
-import Menu from "./Menu";
+import Menu from "./HamburguerMenu";
 
 type IPropNav = {
    className?: string;

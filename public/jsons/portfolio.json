@@ -1,7 +1,7 @@
 {
     "name": "Lucas Maia",
     "socials": {
-        "github": "https://github.com/yLexter/Exercicios",
+        "github": "https://github.com/yLexter",
         "linkedin": "https://www.linkedin.com/in/lucas-ferreira-maia-82a25b263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "twitter": "https://twitter.com/yLexter1"
     },
@@ -27,7 +27,7 @@
                     "profession": "Desenvolvedor Web"
                 },
                 "resume": "Sou um entusiasta da tecnologia e desde o momento em que descobri o maravilhoso universo da programação, tenho mergulhado de cabeça em projetos e desafios.",
-                "aboutMe": "Me chamo Lucas Ferreira Maia, tenho 20 anos, moro em Campina Grande - PB e desde criança sempre tive uma paixão por matemática e tecnologias que me fez entrar no curso computação na Universidade Estadual da Paraíba (UEPB). Atualmente estou na procura da minha primeira vaga como desenvolvedor.",
+                "aboutMe": "Me chamo Lucas Ferreira Maia, tenho 20 anos, moro em Campina Grande - PB e desde criança sempre tive uma paixão por matemática e tecnologias que me fez entrar no curso computação na Universidade Estadual da Paraíba (UEPB) (5° Período). Atualmente estou na procura da minha primeira vaga como desenvolvedor.",
                 "buttons": {
                     "cv": "Meu CV",
                     "aboutMe": "Sobre Mim"
@@ -118,7 +118,7 @@
                 {
                     "name": "ToDo List (Construção)",
                     "github": "https://github.com/yLexter/ToDoList",
-                    "image": "https://t3.ftcdn.net/jpg/01/10/01/90/240_F_110019055_JBbr778hMxpwuwDaFszyQNck5PhBYHli.jpg",
+                    "image": "https://i.pinimg.com/736x/dc/bf/5f/dcbf5f8ba32d8ff36cd30d36a820aa5e.jpg",
                     "description": "Este projeto é um aplicativo da web de gerenciamento de lista de tarefas, projetado para ajudar os usuários a acompanhar suas tarefas diárias de maneira eficiente e organizada. A aplicação permite que os usuários criem, editem, excluam e marquem tarefas como concluídas",
                     "languages": [
                         "TypeScript",
@@ -129,7 +129,7 @@
                 {
                     "name": "Github Profile",
                     "github": "https://github.com/yLexter/github-profile",
-                    "image": "https://camo.githubusercontent.com/6ed76215ecec9edf6cf26ef790a8acd0a2c892462160a58f67d43d564fe1591e/68747470733a2f2f692e6962622e636f2f733150736b67312f696d6167656d2d323032342d30322d32342d3032313332353439332e706e67",
+                    "image": "https://i.ibb.co/s1Pskg1/imagem-2024-02-24-021325493.png",
                     "description": "O projeto GitHub Profile é uma aplicação web desenvolvida com Next.js que permite buscar dados de usuários do GitHub de forma simplificada. Com esta aplicação, você pode obter informações básicas sobre um usuário do GitHub, como nome, foto de perfil, número de seguidores e repositórios públicos.",
                     "languages": [
                         "TypeScript",
@@ -261,7 +261,7 @@
                 {
                     "name": "ToDo List (Under Construction)",
                     "github": "https://github.com/yLexter/ToDoList",
-                    "image": "https://t3.ftcdn.net/jpg/01/10/01/90/240_F_110019055_JBbr778hMxpwuwDaFszyQNck5PhBYHli.jpg",
+                    "image": "https://i.pinimg.com/736x/dc/bf/5f/dcbf5f8ba32d8ff36cd30d36a820aa5e.jpg",
                     "description": "This project is a web application for task list management, designed to help users track their daily tasks efficiently and organized. The application allows users to create, edit, delete, and mark tasks as completed.",
                     "languages": [
                         "TypeScript",
@@ -272,7 +272,7 @@
                 {
                     "name": "Github Profile",
                     "github": "https://github.com/yLexter/github-profile",
-                    "image": "https://camo.githubusercontent.com/6ed76215ecec9edf6cf26ef790a8acd0a2c892462160a58f67d43d564fe1591e/68747470733a2f2f692e6962622e636f2f733150736b67312f696d6167656d2d323032342d30322d32342d3032313332353439332e706e67",
+                    "image": "https://i.ibb.co/s1Pskg1/imagem-2024-02-24-021325493.png",
                     "description": "The Github Profile project is a web application developed with Next.js that allows you to search for GitHub user data in a simplified way. With this application, you can get basic information about a GitHub user, such as name, profile picture, number of followers, and public repositories.",
                     "languages": [
                         "TypeScript",
