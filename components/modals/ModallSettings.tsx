@@ -34,7 +34,7 @@ export default function ModallSettings({ children }: IPropModallSettings) {
    return (
       <Dialog>
          <DialogTrigger>{children}</DialogTrigger>
-         <DialogContent className="rounded-lg">
+         <DialogContent className="max-w-lg rounded-lg">
             <DialogHeader>
                <DialogTitle className="text-lg">Configurações</DialogTitle>
             </DialogHeader>

@@ -97,7 +97,7 @@
                 {
                     "name": "Projetos/Exercícios",
                     "github": "https://github.com/yLexter/Exercicios",
-                    "image": "https://istack.iium.edu.my/uploads/images/gallery/2021-04/scaled-1680-/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg",
+                    "image": "images/projects/curse/main.jpeg",
                     "description": "Todos os meus exercícios e projetos feitos ao longo do curso de ciências da computação da UEPB",
                     "languages": [
                         "Python",
@@ -107,7 +107,7 @@
                 },
                 {
                     "name": "Bot Para Discord",
-                    "github": "https://github.com/yLexter/botyLexter",
+                    "github": "https://github.com/yLexter/BotMusica",
                     "image": "https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/KQtkEi6WmzvGz7ACPAghma/download/",
                     "description": "Este bot multifuncional permite a reprodução de músicas nos canais de voz do Discord, oferece recursos de administração para manter a ordem nos servidores, e inclui minigames para diversão adicional.",
                     "languages": [
@@ -118,7 +118,7 @@
                 {
                     "name": "ToDo List (Construção)",
                     "github": "https://github.com/yLexter/ToDoList",
-                    "image": "https://i.pinimg.com/736x/dc/bf/5f/dcbf5f8ba32d8ff36cd30d36a820aa5e.jpg",
+                    "image": "https://i.ibb.co/999nD3q/Screenshot-5.png",
                     "description": "Este projeto é um aplicativo da web de gerenciamento de lista de tarefas, projetado para ajudar os usuários a acompanhar suas tarefas diárias de maneira eficiente e organizada. A aplicação permite que os usuários criem, editem, excluam e marquem tarefas como concluídas",
                     "languages": [
                         "TypeScript",
@@ -240,7 +240,7 @@
                 {
                     "name": "Projects/Exercises",
                     "github": "https://github.com/yLexter/Exercicios",
-                    "image": "https://istack.iium.edu.my/uploads/images/gallery/2021-04/scaled-1680-/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg",
+                    "image": "images/projects/curse/main.jpeg",
                     "description": "All my exercises and projects done throughout the computer science course at UEPB.",
                     "languages": [
                         "Python",
@@ -250,7 +250,7 @@
                 },
                 {
                     "name": "Discord Bot",
-                    "github": "https://github.com/yLexter/botyLexter",
+                    "github": "https://github.com/yLexter/BotMusica",
                     "image": "https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/KQtkEi6WmzvGz7ACPAghma/download/",
                     "description": "This multifunctional bot allows music playback in Discord voice channels, offers administration features to maintain order in servers, and includes mini-games for additional fun.",
                     "languages": [
@@ -261,7 +261,7 @@
                 {
                     "name": "ToDo List (Under Construction)",
                     "github": "https://github.com/yLexter/ToDoList",
-                    "image": "https://i.pinimg.com/736x/dc/bf/5f/dcbf5f8ba32d8ff36cd30d36a820aa5e.jpg",
+                    "image": "https://i.ibb.co/999nD3q/Screenshot-5.png",
                     "description": "This project is a web application for task list management, designed to help users track their daily tasks efficiently and organized. The application allows users to create, edit, delete, and mark tasks as completed.",
                     "languages": [
                         "TypeScript",

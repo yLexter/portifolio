@@ -78,11 +78,18 @@ const ProjectInformation = ({
 const ProjectImage = ({ project }: IProject) => {
    return (
       <div className="hidden flex-1 items-start justify-center md:w-1/2 md:flex hover:scale-105">
-         <img
-            className="w-full h-auto rounded-lg object-cover shadow-lg"
-            src={project.image}
-            alt={`Projeto: ${project.name}`}
-         />
+         <ModalProjectImage project={project}>
+            <figure>
+               <img
+                  className="w-full h-auto rounded-lg object-cover shadow-lg"
+                  src={project.image}
+                  alt={`Projeto: ${project.name}`}
+               />
+               <figcaption className="text-muted-foreground">
+                  Clique para ver a imagem melhor
+               </figcaption>
+            </figure>
+         </ModalProjectImage>
       </div>
    );
 };
