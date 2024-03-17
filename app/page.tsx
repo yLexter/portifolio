@@ -7,6 +7,7 @@ import Footer from "../components/footer/Footer";
 import Timeline from "../components/timeline/Timeline";
 import Skills from "../components/skills/Skills";
 import ContextProvider from "@/contexts/ContextProvider";
+import ContactMe from "@/components/contact-me/ContactMe";
 
 export default function App() {
    return (
@@ -17,6 +18,7 @@ export default function App() {
          <Skills />
          <Timeline />
          <Projects />
+         <ContactMe />
          <Footer />
       </ContextProvider>
    );

@@ -12,7 +12,8 @@
                 "aboutMe": "Sobre Mim",
                 "skills": "Skills",
                 "timeline": "Timeline",
-                "projects": "Projetos"
+                "projects": "Projetos",
+                "contact": "Contato"
             },
             "sectionTitle": {
                 "aboutMe": "Sobre Mim",
@@ -93,6 +94,23 @@
                     "description": "Possuo habilidades em manipulação de dados no MongoDB, incluindo operações CRUD."
                 }
             ],
+            "contact": {
+                "inputs": {
+                    "username": {
+                        "label": "Nome",
+                        "placeholder": "Digite seu nome..."
+                    },
+                    "email": {
+                        "label": "Email",
+                        "placeholder": "Digite seu email..."
+                    },
+                    "message": {
+                        "label": "Nome",
+                        "placeholder": "Digite seu nome..."
+                    }
+                },
+                "submit": "Enviar"
+            },
             "projects": [
                 {
                     "name": "Projetos/Exercícios",
@@ -155,7 +173,8 @@
                 "aboutMe": "About Me",
                 "skills": "Skills",
                 "timeline": "Timeline",
-                "projects": "Projects"
+                "projects": "Projects",
+                "contact": "Contact"
             },
             "sectionTitle": {
                 "aboutMe": "About Me",
@@ -164,13 +183,13 @@
                 "projects": "Projects"
             },
             "about": {
-                "presetation": "Hello, I am",
+                "presetation": "Hello, I'm",
                 "profession": {
-                    "presetation": "I am a",
+                    "presetation": "I'm a",
                     "profession": "Web Developer"
                 },
-                "resume": "I am a technology enthusiast and passionate about turning lines of code into amazing things. Since the moment I discovered the wonderful universe of programming, I have immersed myself in projects and challenges.",
-                "aboutMe": "My name is Lucas Ferreira Maia, I am 20 years old, living in Campina Grande - PB. Since childhood, I have had a passion for mathematics and technologies, which led me to pursue a degree in computer science at the State University of Paraíba (UEPB). Currently, I am seeking my first position as a developer.",
+                "resume": "I'm a technology enthusiast, and ever since I discovered the wonderful universe of programming, I've been diving headfirst into projects and challenges.",
+                "aboutMe": "My name is Lucas Ferreira Maia, I'm 20 years old, and I live in Campina Grande - PB. Since I was a child, I've always had a passion for mathematics and technology, which led me to study computer science at the State University of Paraíba (UEPB) (5th Period). I'm currently looking for my first job as a developer.",
                 "buttons": {
                     "cv": "My CV",
                     "aboutMe": "About Me"
@@ -178,64 +197,81 @@
             },
             "timeline": [
                 {
-                    "title": "First contact with programming",
-                    "date": "05/06/2021",
-                    "text": "Started studying JavaScript and creating bots for Discord as a hobby."
+                    "title": "First Contact with Programming",
+                    "date": "06/05/2021",
+                    "text": "I started studying Javascript and making bots for Discord as a hobby."
                 },
                 {
                     "title": "Computer Science Course",
-                    "date": "23/04/2022",
-                    "text": "Enrolled in the computer science course at UEPB."
+                    "date": "04/23/2022",
+                    "text": "I joined the computer science course at UEPB."
                 },
                 {
                     "title": "Web Development Area",
-                    "date": "15/01/2023",
-                    "text": "Discovered and started studying web programming."
+                    "date": "01/15/2023",
+                    "text": "I learned about and started studying web programming."
                 }
             ],
             "skills": [
                 {
-                    "title": "HTML, CSS & JavaScript",
+                    "title": "HTML, CSS & Javascript",
+                    "description": "I have extensive knowledge of HTML and CSS for creating attractive and responsive interfaces. In JavaScript, I have advanced skills, including mastery of advanced topics such as Promises, async/await, and efficient event handling.",
                     "icons": [
                         "HTML",
                         "CSS",
                         "JavaScript"
-                    ],
-                    "description": "I have extensive knowledge of HTML and CSS for creating attractive and responsive interfaces. In JavaScript, I have advanced skills, including mastery of advanced topics such as Promises, async/await, and efficient event handling."
+                    ]
                 },
                 {
                     "title": "Next JS & Typescript",
+                    "description": "I develop modern and efficient web applications using NextJS and Typescript. I have advanced experience with Typescript and intermediate experience with NextJS.",
                     "icons": [
                         "NextJs",
                         "TypeScript"
-                    ],
-                    "description": "I develop modern and efficient web applications using NextJS and Typescript. I have advanced experience with Typescript and intermediate experience with NextJS."
+                    ]
                 },
                 {
                     "title": "Python, Java & C",
+                    "description": "In Python, I master the syntax and am experienced with libraries like Pandas and Matplotlib for data manipulation and visualization. In Java, I have complete knowledge of object-oriented programming. In C, I am familiar with the syntax and basic concepts, with an emphasis on file manipulation.",
                     "icons": [
                         "Python",
                         "Java",
                         "C"
-                    ],
-                    "description": "In Python, I master the syntax and have experience with libraries such as Pandas and Matplotlib for data manipulation and visualization. In Java, I have complete knowledge of object-oriented programming. In C, I am familiar with syntax and basic concepts, with an emphasis on file manipulation."
+                    ]
                 },
                 {
                     "title": "Git & Github",
+                    "description": "I am proficient in using Git, performing operations such as pull requests and branch management. I have experience hosting repositories on Github and understand the fundamental concepts of version control.",
                     "icons": [
                         "Git",
                         "Github"
-                    ],
-                    "description": "I am proficient in using Git, performing operations such as pull requests and branch management. I have experience hosting repositories on Github and understand the fundamental concepts of version control."
+                    ]
                 },
                 {
                     "title": "Mongo DB",
+                    "description": "I have skills in data manipulation in MongoDB, including CRUD operations.",
                     "icons": [
                         "MongoDB"
-                    ],
-                    "description": "I have advanced skills in data manipulation in MongoDB, including CRUD operations."
+                    ]
                 }
             ],
+            "contact": {
+                "inputs": {
+                    "username": {
+                        "label": "Name",
+                        "placeholder": "Enter your name..."
+                    },
+                    "email": {
+                        "label": "Email",
+                        "placeholder": "Enter your email..."
+                    },
+                    "message": {
+                        "label": "Message",
+                        "placeholder": "Enter your message..."
+                    }
+                },
+                "submit": "Submit"
+            },
             "projects": [
                 {
                     "name": "Projects/Exercises",
@@ -252,7 +288,7 @@
                     "name": "Discord Bot",
                     "github": "https://github.com/yLexter/BotMusica",
                     "image": "https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/KQtkEi6WmzvGz7ACPAghma/download/",
-                    "description": "This multifunctional bot allows music playback in Discord voice channels, offers administration features to maintain order in servers, and includes mini-games for additional fun.",
+                    "description": "This multifunctional bot allows music playback in Discord voice channels, offers administration features to maintain order in servers, and includes minigames for additional fun.",
                     "languages": [
                         "NodeJs",
                         "MongoDB"
@@ -262,7 +298,7 @@
                     "name": "ToDo List (Under Construction)",
                     "github": "https://github.com/yLexter/ToDoList",
                     "image": "https://i.ibb.co/999nD3q/Screenshot-5.png",
-                    "description": "This project is a web application for task list management, designed to help users track their daily tasks efficiently and organized. The application allows users to create, edit, delete, and mark tasks as completed.",
+                    "description": "This project is a web application for managing a to-do list, designed to help users track their daily tasks efficiently and organized. The application allows users to create, edit, delete, and mark tasks as completed.",
                     "languages": [
                         "TypeScript",
                         "MongoDB",
@@ -273,7 +309,7 @@
                     "name": "Github Profile",
                     "github": "https://github.com/yLexter/github-profile",
                     "image": "https://i.ibb.co/s1Pskg1/imagem-2024-02-24-021325493.png",
-                    "description": "The Github Profile project is a web application developed with Next.js that allows you to search for GitHub user data in a simplified way. With this application, you can get basic information about a GitHub user, such as name, profile picture, number of followers, and public repositories.",
+                    "description": "The GitHub Profile project is a web application developed with Next.js that allows you to easily retrieve data about GitHub users. With this application, you can get basic information about a GitHub user, such as name, profile picture, number of followers, and public repositories.",
                     "languages": [
                         "TypeScript",
                         "NextJs"

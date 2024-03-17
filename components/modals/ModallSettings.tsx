@@ -28,6 +28,7 @@ export default function ModallSettings({ children }: IPropModallSettings) {
    };
 
    const handleClick = () => {
+      console.log(selectedValue);
       setLanguage(selectedValue);
    };
 

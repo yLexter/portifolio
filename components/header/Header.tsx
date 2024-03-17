@@ -37,7 +37,7 @@ export default function Header({}: IPropHeader) {
          <div className="flex justify-between items-center w-full h-auto">
             <div className="flex-1">
                <h1
-                  onClick={() => handleSection(CSectionNames.main)}
+                  onClick={() => handleSection(CSectionNames.home)}
                   className="cursor-pointer inline-block text-2xl font-semibold  "
                >
                   {data.name}

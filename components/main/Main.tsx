@@ -9,7 +9,7 @@ type IPropMain = {};
 export default function Main({}: IPropMain) {
    return (
       <BaseSection
-         id={CSectionNames.main}
+         id={CSectionNames.home}
          style={{ backgroundImage: 'url("./images/main-image.jpg" ' }}
          className={twMerge(
             "bg-cover bg-left flex w-full relative pt-header-height h-screen"

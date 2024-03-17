@@ -1,4 +1,5 @@
 import { CLanguages, CSectionNames } from ".";
+import portfolioJson from "../public/jsons/portfolio.json";
 
 export type TRandomIcon =
    | "JavaScript"
@@ -50,6 +51,7 @@ export type TJsonLanguageData = {
       skills: string;
       timeline: string;
       projects: string;
+      contact: string;
    };
 
    sectionTitle: {
@@ -70,6 +72,23 @@ export type TJsonLanguageData = {
          cv: string;
          aboutMe: string;
       };
+   };
+   contact: {
+      inputs: {
+         username: {
+            label: string;
+            placeholder: string;
+         };
+         email: {
+            label: string;
+            placeholder: string;
+         };
+         message: {
+            label: string;
+            placeholder: string;
+         };
+      };
+      submit: string;
    };
    timeline: TDataTimeline[];
    projects: TProject[];

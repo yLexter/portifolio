@@ -88,7 +88,7 @@ const config: Config = {
          },
 
          margin: {
-            "spacing-section": "4rem",
+            "spacing-section": "5rem",
          },
 
          spacing: {

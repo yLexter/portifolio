@@ -1,12 +1,15 @@
 import { TRandomIcon } from "./types";
+import portfolioJson from "../public/jsons/portfolio.json";
 
-export const CSectionNames = {
-   main: "main",
-   aboutMe: "aboutMe",
-   skills: "skills",
-   timeline: "timeline",
-   projects: "projects",
-} as const;
+const data = portfolioJson.languages["pt_BR"];
+
+type SectionsKeys = keyof typeof data.naveBar;
+
+export const CSectionNames = Object.keys(data.naveBar).reduce((acc, key) => {
+   acc[key as SectionsKeys] = key.toLowerCase();
+
+   return acc;
+}, {} as Record<SectionsKeys, string>);
 
 export const CLanguages = {
    pt_BR: {

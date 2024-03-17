@@ -39,7 +39,7 @@ export default function ListNaveBar({
    return (
       <ul className={twMerge("", className)}>
          <li
-            onClick={() => handleSection(CSectionNames.main)}
+            onClick={() => handleSection(CSectionNames.home)}
             className={classLi}
          >
             {naveBar.home}
@@ -68,6 +68,12 @@ export default function ListNaveBar({
             className={classLi}
          >
             {naveBar.projects}
+         </li>
+         <li
+            onClick={() => handleSection(CSectionNames.contact)}
+            className={classLi}
+         >
+            {naveBar.contact}
          </li>
       </ul>
    );
