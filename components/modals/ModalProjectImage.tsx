@@ -23,9 +23,9 @@ export default function ModalProjectImage({
       <Dialog>
          <DialogTrigger asChild>{children}</DialogTrigger>
 
-         <DialogContent className=" h-2/3 w-[80%] rounded-lg p-0">
+         <DialogContent className="top-[50%] h-auto max-w-[100vw] w-[70%] rounded-lg p-0">
             <img
-               className="object-fill aspect-square w-full h-full"
+               className="object-fill aspect-square w-full h-[55vh]"
                src={project.image}
             />
          </DialogContent>

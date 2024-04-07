@@ -6,6 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { MdOpenInNew } from "react-icons/md";
 import { twMerge } from "tailwind-merge";
 import ModalProjectImage from "../modals/ModalProjectImage";
+import { Badge } from "../ui/badge";
 
 type IProject = {
    project: TProject;
@@ -35,18 +36,17 @@ const ProjectInformation = ({
             <h1 className="text-center text-xl font-semibold mb-4 title-responsive ">
                {name}
             </h1>
-            <p className="text-card-foreground text-center paragraph-responsive">
+            <p className="text-muted-foreground text-center paragraph-responsive">
                {description}
             </p>
          </div>
 
-         <div className="flex gap-x-4 justify-center mb-4">
-            {languages.map((iconLanguge) => {
+         <div className="flex flex-wrap gap-4 items-center justify-center mb-4">
+            {languages.map((language) => {
                return (
-                  <CustomIcon
-                     key={`Project-${name}-${iconLanguge}`}
-                     icon={iconLanguge}
-                  />
+                  <Badge key={`${name}-${language}`} variant="outline">
+                     {language}
+                  </Badge>
                );
             })}
          </div>

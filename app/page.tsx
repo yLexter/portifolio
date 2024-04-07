@@ -18,7 +18,6 @@ export default function App() {
          <Skills />
          <Timeline />
          <Projects />
-         <ContactMe />
          <Footer />
       </ContextProvider>
    );

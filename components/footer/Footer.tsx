@@ -27,6 +27,7 @@ export default function Footer({}: IPropFooter) {
                <SocialIcons.Github />
                <SocialIcons.Linkedin />
                <SocialIcons.Twitter />
+               <SocialIcons.Email />
             </div>
 
             <span className=" text-center paragraph-responsive">

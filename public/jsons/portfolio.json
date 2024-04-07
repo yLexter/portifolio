@@ -3,7 +3,8 @@
     "socials": {
         "github": "https://github.com/yLexter",
         "linkedin": "https://www.linkedin.com/in/lucas-ferreira-maia-82a25b263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "twitter": "https://twitter.com/yLexter1"
+        "twitter": "https://twitter.com/yLexter1",
+        "email": "lucasmaia5954@gmail.com"
     },
     "languages": {
         "pt_BR": {
@@ -28,7 +29,7 @@
                     "profession": "Desenvolvedor Web"
                 },
                 "resume": "Sou um entusiasta da tecnologia e desde o momento em que descobri o maravilhoso universo da programação, tenho mergulhado de cabeça em projetos e desafios.",
-                "aboutMe": "Me chamo Lucas Ferreira Maia, tenho 20 anos, moro em Campina Grande - PB e desde criança sempre tive uma paixão por matemática e tecnologias que me fez entrar no curso computação na Universidade Estadual da Paraíba (UEPB) (5° Período). Atualmente estou na procura da minha primeira vaga como desenvolvedor.",
+                "aboutMe": "Me chamo Lucas Ferreira Maia, tenho 21 anos, moro em Campina Grande - PB e desde criança sempre tive uma paixão por matemática e tecnologias que me fez entrar no curso computação na Universidade Estadual da Paraíba (UEPB) (5° Período). Atualmente estou na procura da minha primeira vaga como desenvolvedor.",
                 "buttons": {
                     "cv": "Meu CV",
                     "aboutMe": "Sobre Mim"
@@ -49,6 +50,11 @@
                     "title": "Área de Web",
                     "date": "15/01/2023",
                     "text": "Conheci e começei os estudos de progamação web."
+                },
+                {
+                    "title": "Atualmente",
+                    "date": "",
+                    "text": "Estou no 5° Período (8 no Total) do curso de Ciências da Computação."
                 }
             ],
             "skills": [
@@ -62,12 +68,13 @@
                     "description": "Possuo amplo conhecimento em HTML e CSS para a criação de interfaces atraentes e responsivas. No JavaScript, possuo habilidades avançadas, incluindo o domínio de tópicos avançados como Promises, async/await, e manipulação eficiente de eventos."
                 },
                 {
-                    "title": "Next JS & Typescript",
+                    "title": "Next JS , Typescript & Tailwind",
                     "icons": [
                         "NextJs",
-                        "TypeScript"
+                        "TypeScript",
+                        "Tailwind"
                     ],
-                    "description": "Desenvolvo aplicações web modernas e eficientes utilizando NextJS e Typescript. Tenho experiencia avançada com Typescript e média com NextJS"
+                    "description": "Tenho experiência em desenvolvimento web com Next.js, TypeScript e Tailwind CSS, criando aplicações modernas e eficientes com rotas dinâmicas, tipagem estática e estilização rápida.   "
                 },
                 {
                     "title": "Python, Java & C",
@@ -87,11 +94,12 @@
                     "description": "Sou proficiente no uso do Git, realizando operações como pull requests e gerenciamento de branches. Tenho experiência na hospedagem de repositórios no Github e compreendo os conceitos fundamentais de controle de versão."
                 },
                 {
-                    "title": "Mongo DB",
+                    "title": "Mongo DB e SQL",
                     "icons": [
-                        "MongoDB"
+                        "MongoDB",
+                        "Sql"
                     ],
-                    "description": "Possuo habilidades em manipulação de dados no MongoDB, incluindo operações CRUD."
+                    "description": "Possuo habilidades em MongoDB, incluindo operações CRUD e modelagem eficiente de dados. Em SQL, tenho experiência em vários tipos de consultas, normalização e diagramas de entidade-relacionamento."
                 }
             ],
             "contact": {
@@ -116,7 +124,7 @@
                     "name": "Projetos/Exercícios",
                     "github": "https://github.com/yLexter/Exercicios",
                     "image": "images/projects/curse/main.jpeg",
-                    "description": "Todos os meus exercícios e projetos feitos ao longo do curso de ciências da computação da UEPB",
+                    "description": "Todas minhas Atividades/Projetos da faculdade. Em Python, aprendi a utilizar as bibliotecas Pandas e Matplotlib para manipulação e visualização de dados. Em C, explorei conceitos de baixo nível, como alocação dinâmica de memória, ponteiros e manipulação de arquivos. Em Java, aprofundei meu conhecimento em Programação Orientada a Objetos (POO) e utilizei a ferramenta JUnit para realizar testes unitários. Estudei e implementei diversas estruturas de dados, como filas, pilhas, tabelas hash, árvores vermelhas e pretas, árvores splay e árvores AVL, além de realizar análises assintóticas de algoritmos.",
                     "languages": [
                         "Python",
                         "Java",
@@ -127,21 +135,27 @@
                     "name": "Bot Para Discord",
                     "github": "https://github.com/yLexter/BotMusica",
                     "image": "https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/KQtkEi6WmzvGz7ACPAghma/download/",
-                    "description": "Este bot multifuncional permite a reprodução de músicas nos canais de voz do Discord, oferece recursos de administração para manter a ordem nos servidores, e inclui minigames para diversão adicional.",
+                    "description": "Este bot permite a reprodução de músicas no Discord, com diversos comandos e interações através de botões de interação em mensagem.",
                     "languages": [
                         "NodeJs",
-                        "MongoDB"
+                        "MongoDB",
+                        "Discord-JS"
                     ]
                 },
                 {
-                    "name": "ToDo List (Construção)",
+                    "name": "ToDo List (BackEnd em Construção)",
                     "github": "https://github.com/yLexter/ToDoList",
                     "image": "https://i.ibb.co/999nD3q/Screenshot-5.png",
                     "description": "Este projeto é um aplicativo da web de gerenciamento de lista de tarefas, projetado para ajudar os usuários a acompanhar suas tarefas diárias de maneira eficiente e organizada. A aplicação permite que os usuários criem, editem, excluam e marquem tarefas como concluídas",
                     "languages": [
+                        "Shardcn UI",
+                        "Tailwind CSS",
                         "TypeScript",
                         "MongoDB",
-                        "NextJs"
+                        "NextJs",
+                        "Next-Auth",
+                        "Prisma",
+                        "SQL"
                     ]
                 },
                 {
@@ -151,18 +165,10 @@
                     "description": "O projeto GitHub Profile é uma aplicação web desenvolvida com Next.js que permite buscar dados de usuários do GitHub de forma simplificada. Com esta aplicação, você pode obter informações básicas sobre um usuário do GitHub, como nome, foto de perfil, número de seguidores e repositórios públicos.",
                     "languages": [
                         "TypeScript",
-                        "NextJs"
-                    ]
-                },
-                {
-                    "name": "WikiDarius (Construção)",
-                    "liveDemo": "https://wikidarius.vercel.app/",
-                    "image": "https://i.pinimg.com/originals/6f/93/50/6f93508f78319faf2a9929632b3fc041.jpg",
-                    "description": "WikiDarius é uma plataforma online dedicada a criar uma comunidade de jogadores apaixonados de League of Legends (LoL), com um foco especial no campeão Darius.",
-                    "languages": [
-                        "TypeScript",
-                        "MongoDB",
-                        "NextJs"
+                        "NextJs",
+                        "Rest API",
+                        "Shardcn UI",
+                        "Tailwind CSS"
                     ]
                 }
             ]
@@ -183,13 +189,13 @@
                 "projects": "Projects"
             },
             "about": {
-                "presetation": "Hello, I'm",
+                "presetation": "Hello, I am",
                 "profession": {
-                    "presetation": "I'm a",
+                    "presetation": "I am a",
                     "profession": "Web Developer"
                 },
-                "resume": "I'm a technology enthusiast, and ever since I discovered the wonderful universe of programming, I've been diving headfirst into projects and challenges.",
-                "aboutMe": "My name is Lucas Ferreira Maia, I'm 20 years old, and I live in Campina Grande - PB. Since I was a child, I've always had a passion for mathematics and technology, which led me to study computer science at the State University of Paraíba (UEPB) (5th Period). I'm currently looking for my first job as a developer.",
+                "resume": "I am passionate about technology, and since I discovered the wonderful universe of programming, I have immersed myself in projects and challenges.",
+                "aboutMe": "My name is Lucas Ferreira Maia, I am 21 years old, I live in Campina Grande - PB, and since I was a child, I have always had a passion for mathematics and technologies, which led me to study Computer Science at the State University of Paraíba (UEPB) (5th Period). I am currently looking for my first job as a developer.",
                 "buttons": {
                     "cv": "My CV",
                     "aboutMe": "About Me"
@@ -197,62 +203,69 @@
             },
             "timeline": [
                 {
-                    "title": "First Contact with Programming",
-                    "date": "06/05/2021",
-                    "text": "I started studying Javascript and making bots for Discord as a hobby."
+                    "title": "First contact with programming",
+                    "date": "05/06/2021",
+                    "text": "Started studying Javascript and making bots for Discord as a hobby."
                 },
                 {
                     "title": "Computer Science Course",
-                    "date": "04/23/2022",
+                    "date": "23/04/2022",
                     "text": "I joined the computer science course at UEPB."
                 },
                 {
                     "title": "Web Development Area",
-                    "date": "01/15/2023",
-                    "text": "I learned about and started studying web programming."
+                    "date": "15/01/2023",
+                    "text": "I started studying web programming."
+                },
+                {
+                    "title": "Currently",
+                    "date": "",
+                    "text": "I am in the 5th Period (8 in Total) of the Computer Science course."
                 }
             ],
             "skills": [
                 {
                     "title": "HTML, CSS & Javascript",
-                    "description": "I have extensive knowledge of HTML and CSS for creating attractive and responsive interfaces. In JavaScript, I have advanced skills, including mastery of advanced topics such as Promises, async/await, and efficient event handling.",
                     "icons": [
                         "HTML",
                         "CSS",
                         "JavaScript"
-                    ]
+                    ],
+                    "description": "I have extensive knowledge in HTML and CSS for creating attractive and responsive interfaces. In JavaScript, I have advanced skills, including mastery of advanced topics such as Promises, async/await, and efficient event handling."
                 },
                 {
-                    "title": "Next JS & Typescript",
-                    "description": "I develop modern and efficient web applications using NextJS and Typescript. I have advanced experience with Typescript and intermediate experience with NextJS.",
+                    "title": "Next JS , Typescript & Tailwind",
                     "icons": [
                         "NextJs",
-                        "TypeScript"
-                    ]
+                        "TypeScript",
+                        "Tailwind"
+                    ],
+                    "description": "I have experience in web development with Next.js, TypeScript, and Tailwind CSS, creating modern and efficient applications with dynamic routes, static typing, and quick styling."
                 },
                 {
                     "title": "Python, Java & C",
-                    "description": "In Python, I master the syntax and am experienced with libraries like Pandas and Matplotlib for data manipulation and visualization. In Java, I have complete knowledge of object-oriented programming. In C, I am familiar with the syntax and basic concepts, with an emphasis on file manipulation.",
                     "icons": [
                         "Python",
                         "Java",
                         "C"
-                    ]
+                    ],
+                    "description": "In Python, I master the syntax and have experience with libraries like Pandas and Matplotlib for data manipulation and visualization. In Java, I have complete knowledge of object-oriented programming. In C, I am familiar with syntax and basic concepts, with an emphasis on file manipulation."
                 },
                 {
                     "title": "Git & Github",
-                    "description": "I am proficient in using Git, performing operations such as pull requests and branch management. I have experience hosting repositories on Github and understand the fundamental concepts of version control.",
                     "icons": [
                         "Git",
                         "Github"
-                    ]
+                    ],
+                    "description": "I am proficient in using Git, performing operations such as pull requests and branch management. I have experience in hosting repositories on Github and understand the fundamental concepts of version control."
                 },
                 {
-                    "title": "Mongo DB",
-                    "description": "I have skills in data manipulation in MongoDB, including CRUD operations.",
+                    "title": "Mongo DB and SQL",
                     "icons": [
-                        "MongoDB"
-                    ]
+                        "MongoDB",
+                        "Sql"
+                    ],
+                    "description": "I have skills in MongoDB, including CRUD operations and efficient data modeling. In SQL, I have experience in various types of queries, normalization, and entity-relationship diagrams."
                 }
             ],
             "contact": {
@@ -277,7 +290,7 @@
                     "name": "Projects/Exercises",
                     "github": "https://github.com/yLexter/Exercicios",
                     "image": "images/projects/curse/main.jpeg",
-                    "description": "All my exercises and projects done throughout the computer science course at UEPB.",
+                    "description": "All my activities/projects from college. In Python, I learned to use the Pandas and Matplotlib libraries for data manipulation and visualization. In C, I explored low-level concepts such as dynamic memory allocation, pointers, and file manipulation. In Java, I deepened my knowledge of Object-Oriented Programming (OOP) and used the JUnit tool for unit testing. I studied and implemented various data structures, such as queues, stacks, hash tables, red-black trees, splay trees, and AVL trees, as well as asymptotic analyses of algorithms.",
                     "languages": [
                         "Python",
                         "Java",
@@ -288,42 +301,40 @@
                     "name": "Discord Bot",
                     "github": "https://github.com/yLexter/BotMusica",
                     "image": "https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/KQtkEi6WmzvGz7ACPAghma/download/",
-                    "description": "This multifunctional bot allows music playback in Discord voice channels, offers administration features to maintain order in servers, and includes minigames for additional fun.",
+                    "description": "This bot allows playing music on Discord, with various commands and interactions through message interaction buttons.",
                     "languages": [
                         "NodeJs",
-                        "MongoDB"
+                        "MongoDB",
+                        "Discord-JS"
                     ]
                 },
                 {
-                    "name": "ToDo List (Under Construction)",
+                    "name": "ToDo List (Backend in Construction)",
                     "github": "https://github.com/yLexter/ToDoList",
                     "image": "https://i.ibb.co/999nD3q/Screenshot-5.png",
-                    "description": "This project is a web application for managing a to-do list, designed to help users track their daily tasks efficiently and organized. The application allows users to create, edit, delete, and mark tasks as completed.",
+                    "description": "This project is a web application for managing to-do lists, designed to help users track their daily tasks efficiently and organized. The application allows users to create, edit, delete, and mark tasks as completed.",
                     "languages": [
+                        "Shardcn UI",
+                        "Tailwind CSS",
                         "TypeScript",
                         "MongoDB",
-                        "NextJs"
+                        "NextJs",
+                        "Next-Auth",
+                        "Prisma",
+                        "SQL"
                     ]
                 },
                 {
                     "name": "Github Profile",
                     "github": "https://github.com/yLexter/github-profile",
                     "image": "https://i.ibb.co/s1Pskg1/imagem-2024-02-24-021325493.png",
-                    "description": "The GitHub Profile project is a web application developed with Next.js that allows you to easily retrieve data about GitHub users. With this application, you can get basic information about a GitHub user, such as name, profile picture, number of followers, and public repositories.",
+                    "description": "The GitHub Profile project is a web application developed with Next.js that allows you to fetch GitHub user data in a simplified way. With this application, you can get basic information about a GitHub user, such as name, profile picture, number of followers, and public repositories.",
                     "languages": [
                         "TypeScript",
-                        "NextJs"
-                    ]
-                },
-                {
-                    "name": "WikiDarius (Under Construction)",
-                    "liveDemo": "https://wikidarius.vercel.app/",
-                    "image": "https://i.pinimg.com/originals/6f/93/50/6f93508f78319faf2a9929632b3fc041.jpg",
-                    "description": "WikiDarius is an online platform dedicated to creating a community of passionate League of Legends (LoL) players, with a special focus on the champion Darius.",
-                    "languages": [
-                        "TypeScript",
-                        "MongoDB",
-                        "NextJs"
+                        "NextJs",
+                        "Rest API",
+                        "Shardcn UI",
+                        "Tailwind CSS"
                     ]
                 }
             ]

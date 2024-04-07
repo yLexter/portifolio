@@ -60,6 +60,7 @@ export default function Presetation({ className }: IPropPresetation) {
             <SocialIcons.Github />
             <SocialIcons.Linkedin />
             <SocialIcons.Twitter />
+            <SocialIcons.Email />
          </div>
 
          <div className="flex gap-x-4">

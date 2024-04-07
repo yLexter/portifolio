@@ -1,4 +1,4 @@
-import { TRandomIcon } from "./types";
+import { TRandomTechnology } from "./types";
 import portfolioJson from "../public/jsons/portfolio.json";
 
 const data = portfolioJson.languages["pt_BR"];
@@ -22,7 +22,7 @@ export const CLanguages = {
    },
 };
 
-export const TRandomIconColors: Record<TRandomIcon, string> = {
+export const TRandomTechnologyColors: Record<TRandomTechnology, string> = {
    JavaScript: "#F7DF1E",
    TypeScript: "#3178C6",
    HTML: "#E44D26",
@@ -39,4 +39,7 @@ export const TRandomIconColors: Record<TRandomIcon, string> = {
    Linkedin: "#FFFFFF",
    Git: "#f05033",
    Twitter: "#FFFFFF",
+   Tailwind: "#add8e6",
+   Sql: "#007396",
+   Email: "#f05033",
 } as const;

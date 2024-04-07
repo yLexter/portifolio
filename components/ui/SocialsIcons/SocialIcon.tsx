@@ -34,5 +34,10 @@ export function SocialIcon() {
             />
          </IconWithLink>
       ),
+      Email: () => (
+         <IconWithLink url={`mailto:${socials.email}`}>
+            <CustomIcon className="hover:scale-150 duration-300" icon="Email" />
+         </IconWithLink>
+      ),
    };
 }

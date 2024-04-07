@@ -1,7 +1,7 @@
 import { CLanguages, CSectionNames } from ".";
 import portfolioJson from "../public/jsons/portfolio.json";
 
-export type TRandomIcon =
+export type TRandomTechnology =
    | "JavaScript"
    | "TypeScript"
    | "HTML"
@@ -17,11 +17,14 @@ export type TRandomIcon =
    | "Linkedin"
    | "Twitter"
    | "Git"
-   | "NextJs";
+   | "NextJs"
+   | "Tailwind"
+   | "Sql"
+   | "Email";
 
 export type TSkill = {
    title: string;
-   icons: TRandomIcon[];
+   icons: TRandomTechnology[];
    description: string;
 };
 
@@ -33,7 +36,7 @@ export type TProject = {
    liveDemo?: string;
    image: string;
    description: string;
-   languages: TRandomIcon[];
+   languages: string[];
 };
 
 export type TDataTimeline = {
@@ -101,6 +104,7 @@ export type TJsonData = {
       github: string;
       linkedin: string;
       twitter: string;
+      email: string;
    };
    languages: Record<TLanguages, TJsonLanguageData>;
 };
